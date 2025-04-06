@@ -31,13 +31,6 @@
             "pages": [
               "ecosistema/usuarios"
             ]
-          },
-          {
-            "group": "Estructura",
-            "pages": [
-              "estructura/modelo-organizacional",
-              "estructura/roles-responsabilidades"
-            ]
           }
         ]
       },
@@ -112,6 +105,11 @@
           "anchor": "App Asesor",
           "href": "https://appasesor.grupocolorines.mx/",
           "icon": "mobile"
+        },
+        {
+          "anchor": "Status",
+          "href": "https://colorines.betteruptime.com",
+          "icon": "server"
         }
       ]
     }
