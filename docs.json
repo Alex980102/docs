@@ -11,12 +11,81 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentación",
+        "tab": "Organización",
         "groups": [
+          {
+            "group": "Inicio",
+            "pages": [
+              "introduction"
+            ]
+          },
           {
             "group": "Introducción",
             "pages": [
-              "introduction"
+              "introduccion/que-es-colorines",
+              "introduccion/historia-impacto"
+            ]
+          },
+          {
+            "group": "Ecosistema",
+            "pages": [
+              "ecosistema/usuarios"
+            ]
+          },
+          {
+            "group": "Estructura",
+            "pages": [
+              "estructura/modelo-organizacional",
+              "estructura/roles-responsabilidades"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tecnología",
+        "groups": [
+          {
+            "group": "Plataforma Actual",
+            "pages": [
+              "plataforma-actual/diagnostico-sistemas",
+              "plataforma-actual/funcionalidades-clave",
+              "plataforma-actual/puntos-dolor"
+            ]
+          },
+          {
+            "group": "Visión Tecnológica",
+            "pages": [
+              "vision-tecnologica/principios-guia",
+              "vision-tecnologica/estrategia-digital",
+              "vision-tecnologica/oportunidades-innovacion"
+            ]
+          },
+          {
+            "group": "Arquitectura de Datos",
+            "pages": [
+              "arquitectura-datos/modelo-datos",
+              "arquitectura-datos/flujos-informacion",
+              "arquitectura-datos/inteligencia-negocio"
+            ]
+          },
+          {
+            "group": "Procesos Digitales",
+            "pages": [
+              "procesos-digitales/digitalizacion-ventas",
+              "procesos-digitales/integracion-departamental",
+              "procesos-digitales/experiencia-usuario"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Recursos",
+        "groups": [
+          {
+            "group": "Referencias",
+            "pages": [
+              "recursos/glosario-tecnico",
+              "recursos/estandares-referencia"
             ]
           }
         ]
@@ -28,6 +97,21 @@
           "anchor": "Sitio Web",
           "href": "https://grupocolorines.mx",
           "icon": "globe"
+        },
+        {
+          "anchor": "Dashboard",
+          "href": "https://dashboard.grupocolorines.mx/",
+          "icon": "chart-line"
+        },
+        {
+          "anchor": "Portal del Cliente",
+          "href": "https://portaldelcliente.grupocolorines.mx",
+          "icon": "user"
+        },
+        {
+          "anchor": "App Asesor",
+          "href": "https://appasesor.grupocolorines.mx/",
+          "icon": "mobile"
         }
       ]
     }
@@ -46,7 +130,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://app.grupocolorines.mx"
+      "href": "https://dashboard.grupocolorines.mx/"
     }
   },
   "footer": {
