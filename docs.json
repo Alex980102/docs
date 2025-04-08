@@ -35,10 +35,10 @@
         ]
       },
       {
-        "tab": "Tecnología",
+        "tab": "Plataformas",
         "groups": [
           {
-            "group": "Plataforma Actual",
+            "group": "Dashboard",
             "pages": [
               "plataforma-actual/diagnostico-sistemas",
               "plataforma-actual/funcionalidades-clave",
@@ -46,7 +46,7 @@
             ]
           },
           {
-            "group": "Visión Tecnológica",
+            "group": "App Asesor",
             "pages": [
               "vision-tecnologica/principios-guia",
               "vision-tecnologica/estrategia-digital",
@@ -54,7 +54,7 @@
             ]
           },
           {
-            "group": "Arquitectura de Datos",
+            "group": "Portal del cliente",
             "pages": [
               "arquitectura-datos/modelo-datos",
               "arquitectura-datos/flujos-informacion",
@@ -62,7 +62,7 @@
             ]
           },
           {
-            "group": "Procesos Digitales",
+            "group": "Onboarding",
             "pages": [
               "procesos-digitales/digitalizacion-ventas",
               "procesos-digitales/integracion-departamental",
