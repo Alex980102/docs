@@ -40,6 +40,25 @@
           {
             "group": "Dashboard",
             "pages": [
+              "plataforma-actual/iniciar-sesion",
+              {
+                "group": "CRM",
+                "pages": [
+                  "plataforma-actual/crm/crear-cotizacion",
+                  "plataforma-actual/crm/agregar-prospecto",
+                  "plataforma-actual/crm/buscar-cotizacion",
+                  {
+                    "group": "Cotizacion",
+                    "pages": [
+                      "plataforma-actual/crm/cotizacion/detalles-cotizacion",
+                      "plataforma-actual/crm/cotizacion/estatus-cotizacion",
+                      "plataforma-actual/crm/cotizacion/link-ventas-automatizadas",
+                      "plataforma-actual/crm/cotizacion/descargar-pdf",
+                      "plataforma-actual/crm/cotizacion/cancelar-cotizacion"
+                    ]
+                  }
+                ]
+              },
               "plataforma-actual/diagnostico-sistemas",
               "plataforma-actual/funcionalidades-clave",
               "plataforma-actual/puntos-dolor"
