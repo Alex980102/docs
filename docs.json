@@ -40,6 +40,7 @@
           {
             "group": "Dashboard",
             "pages": [
+              "plataforma-actual/iniciar-sesion",
               {
                 "group": "CRM",
                 "pages": [
