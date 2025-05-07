@@ -40,7 +40,6 @@
           {
             "group": "Dashboard",
             "pages": [
-              "plataforma-actual/manual-usuario-dashboard",
               "plataforma-actual/diagnostico-sistemas",
               "plataforma-actual/funcionalidades-clave",
               "plataforma-actual/puntos-dolor"
