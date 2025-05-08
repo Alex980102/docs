@@ -44,8 +44,8 @@
               {
                 "group": "CRM",
                 "pages": [
-                  "plataforma-actual/crm/crear-cotizacion",
                   "plataforma-actual/crm/agregar-prospecto",
+                  "plataforma-actual/crm/crear-cotizacion",
                   "plataforma-actual/crm/buscar-cotizacion",
                   {
                     "group": "Cotizacion",
