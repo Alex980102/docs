@@ -44,19 +44,63 @@
               {
                 "group": "CRM",
                 "pages": [
-                  "plataforma-actual/crm/crear-cotizacion",
                   "plataforma-actual/crm/agregar-prospecto",
+                  "plataforma-actual/crm/crear-cotizacion",
                   "plataforma-actual/crm/buscar-cotizacion",
                   {
                     "group": "Cotizacion",
                     "pages": [
                       "plataforma-actual/crm/cotizacion/detalles-cotizacion",
                       "plataforma-actual/crm/cotizacion/estatus-cotizacion",
-                      "plataforma-actual/crm/cotizacion/link-ventas-automatizadas",
-                      "plataforma-actual/crm/cotizacion/descargar-pdf",
+                      "plataforma-actual/crm/cotizacion/descargar-cotizacion",
                       "plataforma-actual/crm/cotizacion/cancelar-cotizacion"
                     ]
                   }
+                ]
+              },
+              {
+                "group": "Ventas",
+                "pages": [
+                  "plataforma-actual/ventas/avance-venta",
+                  "plataforma-actual/ventas/buscar-venta",
+                  {
+                    "group": "Elementos de una venta",
+                    "pages": [
+                      "plataforma-actual/ventas/elementos-venta/detalle-de-la-venta",
+                      "plataforma-actual/ventas/elementos-venta/asesor-de-venta",
+                      "plataforma-actual/ventas/elementos-venta/desarrollo-venta",
+                      "plataforma-actual/ventas/elementos-venta/documentos-venta",
+                      "plataforma-actual/ventas/elementos-venta/propietario-venta",
+                      "plataforma-actual/ventas/elementos-venta/contrato-venta",
+                      "plataforma-actual/ventas/elementos-venta/cobranza-venta"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Clientes",
+                "pages": [
+                  "plataforma-actual/clientes/vista-principal-clientes",
+                  "plataforma-actual/clientes/buscar-clientes",
+                  "plataforma-actual/clientes/reporte-de-nuevos-clientes"
+                ]
+              },
+              {
+                "group": "Canales",
+                "pages": [
+                  "plataforma-actual/canales/listado-de-canales"
+                ]
+              },
+              {
+                "group": "Comisiones",
+                "pages": [
+                  "plataforma-actual/comisiones/recibos"
+                ]
+              },
+              {
+                "group": "Campañas",
+                "pages": [
+                  "plataforma-actual/campañas/informacion"
                 ]
               },
               "plataforma-actual/diagnostico-sistemas",
