@@ -119,6 +119,7 @@
           {
             "group": "Portal del cliente",
             "pages": [
+              "arquitectura-datos/portal-cliente",
               "arquitectura-datos/modelo-datos",
               "arquitectura-datos/flujos-informacion",
               "arquitectura-datos/inteligencia-negocio"
