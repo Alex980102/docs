@@ -127,6 +127,7 @@
           {
             "group": "Onboarding",
             "pages": [
+              "procesos-digitales/ventas-automatizadas",
               "procesos-digitales/digitalizacion-ventas",
               "procesos-digitales/integracion-departamental",
               "procesos-digitales/experiencia-usuario"
