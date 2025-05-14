@@ -1,0 +1,105 @@
+### Buscar cotización
+
+Dentro del módulo de **CRM**, encontrarás la pantalla principal para gestionar y buscar cotizaciones de forma eficiente. Esta herramienta está diseñada para ofrecer una búsqueda flexible y filtros avanzados que te permitirán encontrar cualquier cotización registrada.
+
+---
+
+#### Búsqueda general
+
+En la parte superior se encuentra un componente que permite:
+
+- Seleccionar un **rango de fechas** para acotar la búsqueda según el periodo en el que se generaron las cotizaciones.
+- Utilizar un **campo de búsqueda abierto**, donde podrás ingresar:
+  - El nombre del **lote**
+  - El nombre del **prospecto**
+
+<Note>
+  Este campo acepta texto parcial o completo y permite encontrar coincidencias
+  en tiempo real conforme se escribe.
+</Note>
+
+---
+
+#### Filtros avanzados
+
+Además del campo abierto, se cuenta con un panel de filtros que permite afinar los resultados aún más.
+
+<CardGroup cols={2}>
+  <Card title="Ordenar por">Fecha descendente (opción predeterminada)</Card>
+  <Card title="Filtrar por estado">
+    Selecciona una opción como: Enviada, Guardada, Cancelada, entre otros.
+  </Card>
+  <Card title="Filtrar por moneda">
+    Permite filtrar cotizaciones generadas en Moneda Nacional (MXN) o Dólares
+    (USD).
+  </Card>
+  <Card title="Filtrar por asesor">
+    Puedes acotar las búsquedas por el nombre del asesor que generó la
+    cotización.
+  </Card>
+  <Card title="Filtrar por desarrollo">
+    Muestra únicamente las cotizaciones asociadas a un desarrollo inmobiliario
+    específico.
+  </Card>
+  <Card title="Filtrar por proyecto">
+    Permite seleccionar un proyecto en particular dentro del desarrollo.
+  </Card>
+  <Card title="Filtrar por etapa">
+    Útil si deseas consultar cotizaciones correspondientes a una etapa
+    específica.
+  </Card>
+</CardGroup>
+
+<Note>
+  Puedes combinar varios filtros a la vez para obtener resultados más precisos.
+</Note>
+
+---
+
+#### Resultados
+
+Una vez aplicados los filtros, la vista se actualizará con las cotizaciones correspondientes. En cada resultado podrás visualizar:
+
+- Nombre del cliente o prospecto
+- Proyecto y lote cotizado
+- Estado actual de la cotización
+- Fecha de emisión
+- ID de cotización asignado
+
+<Check>
+  Los resultados se actualizan automáticamente al aplicar filtros o realizar una
+  búsqueda por texto.
+</Check>
+
+<Note>
+  Puedes hacer clic en cualquier cotización listada para visualizar su detalle
+  completo, editarla o continuar con el proceso de ventas.
+</Note>
+
+<AccordionGroup>
+
+<Accordion title="¿Puedo buscar una cotización por el nombre del lote?">
+  Sí, el campo de búsqueda permite ingresar el nombre del lote, del prospecto o
+  de ambos para filtrar resultados rápidamente. Asegúrate de escribir el nombre
+  completo o parte relevante del mismo.
+</Accordion>
+
+<Accordion title="¿Cómo funcionan los filtros avanzados?">
+  Los filtros avanzados te permiten refinar la búsqueda por estado de la
+  cotización, moneda, asesor asignado, desarrollo, proyecto y etapa. Esto es
+  útil cuando se gestionan múltiples cotizaciones simultáneamente.
+</Accordion>
+
+<Accordion title="¿Qué orden aplica la opción 'Fecha descendente'?">
+  Al seleccionar esta opción, el sistema mostrará las cotizaciones más recientes
+  primero. Es útil para identificar cotizaciones generadas en días recientes o
+  en seguimiento activo.
+</Accordion>
+
+<Accordion title="¿Por qué no aparece mi cotización en los resultados?">
+  Verifica que el rango de fechas seleccionado incluya el día en que fue creada
+  la cotización. También revisa si algún filtro avanzado está limitando la
+  visibilidad del resultado esperado.
+</Accordion>
+
+</AccordionGroup>

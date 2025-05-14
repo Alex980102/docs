@@ -1,0 +1,295 @@
+## Realizar una Cotización
+
+Para generar una nueva cotización en el sistema, sigue los pasos que te presentamos a continuación. Esta funcionalidad se encuentra dentro del módulo **CRM**.
+
+### 1. Ingresa al módulo CRM
+
+<Card title="Acceder al CRM" icon="rocket-launch" href="#">
+  Una vez loggeado, en el panel lateral izquierdo, identifica el ícono{" "}
+  <Icon icon="file" iconType="solid" /> con el nombre **CRM**. Haz clic para
+  ingresar al módulo.
+</Card>
+
+### 2. Crear una nueva cotización
+
+<Card title="Nueva Cotización" icon="file-circle-plus" href="#">
+  Dentro del CRM, haz clic en el botón ubicado en la parte superior derecha que
+  dice **Nueva cotización**.
+</Card>
+
+<Note>
+  Es importante que el prospecto ya esté cargado en la plataforma. Si aún no lo
+  has agregado, consulta los pasos en: [Agregar
+  prospecto](/plataforma-actual/crm/agregar-prospecto)
+</Note>
+
+### 3. Completa la información de la cotización
+
+<Card title="Datos de la Cotización" icon="pen-to-square" href="#">
+    El sistema precargará tu nombre como asesor. A continuación, deberás:
+
+        - Buscar y seleccionar al **prospecto** en el campo de texto abierto.
+        - Seleccionar el **desarrollo** correspondiente.
+        - Elegir el **proyecto** dentro del desarrollo.
+        - Escoger la **etapa** del proyecto.
+
+</Card>
+
+### 4. Selección de moneda
+
+Una vez seleccionada la etapa, podrás definir la moneda de cotización:
+
+<CardGroup cols={2}>
+  <Card title="Moneda Nacional (MXN)">
+    Para cotizaciones en pesos mexicanos. Esta opción es la predeterminada para
+    clientes nacionales.
+  </Card>
+  <Card title="Moneda Extranjera (USD)">
+    Selecciona esta opción si el cliente desea visualizar la cotización en
+    dólares.
+  </Card>
+</CardGroup>
+
+---
+
+### 5. Crear cotización
+
+Haz clic en el botón **Crear cotización** para guardar la información.
+
+<Check>
+  En la parte lateral derecha se mostrará un mapa con la ubicación del lote
+  seleccionado. Esta visualización es solo informativa y no afecta la
+  cotización.
+</Check>
+
+Da clic en **Crear cotización**. Aparecerá una ventana para confirmar la
+acción. Al dar clic en **Guardar**, se generará la misma y pasaremos a otra pantalla.
+
+---
+
+### 6. Configura tu cotización
+
+<Check>
+  Cotización generada correctamente: verás el identificador único en la parte
+  superior (ej. `cot_AAAAbbb000`), útil para seguimiento.
+</Check>
+
+#### Datos del cliente
+
+Se muestra el nombre completo y correo electrónico del cliente prospecto.
+Esta información es la que se usará para su contrato y su acceso al portal.
+
+---
+
+#### Información del lote
+
+Verás el nombre del desarrollo, el proyecto al que pertenece, el identificador del lote, superficie total y el costo base.
+
+---
+
+#### Promociones
+
+En este apartado puedes aplicar descuentos o promociones si están disponibles:
+
+- **Descuento por etapa**
+- **Promociones activas**
+- **Código de promoción personalizado**
+
+<Note>
+  Las promociones y códigos deben ser autorizados por Dirección. Asegúrate de
+  que estén vigentes antes de aplicarlos.
+</Note>
+
+---
+
+#### Cotización
+
+Aquí se resumen los montos clave:
+
+- **Precio final del lote**
+- **Gastos administrativos** (estos suelen estar predefinidos)
+- **Porcentaje de enganche** (ajustable mediante deslizador)
+
+<Note>
+  A partir de un enganche del 30%, puedes dividir el pago inicial en
+  parcialidades de hasta 6 meses.
+</Note>
+
+---
+
+#### Opciones de pago
+
+<CardGroup cols={2}>
+  <Card title="Plazos">
+    Selecciona el plazo deseado (por ejemplo, 72 meses).  
+    Al dar clic en **Guardar y previsualizar**, la tabla lateral se ajustará automáticamente.
+  </Card>
+
+  <Card title="Editar tabla de cuotas">
+    Si necesitas personalizar los pagos, activa esta opción.  
+    Podrás modificar cada cuota de manera individual desde la tabla del lado derecho.
+  </Card>
+</CardGroup>
+
+<Note>
+  El sistema ajusta automáticamente el último pago de la tabla para redondear o
+  compensar diferencias. Esto puede hacer que el monto final tenga pequeñas
+  variaciones en centavos o pesos.
+</Note>
+
+#### Editar tabla de cuotas
+
+##### Editar cuotas individualmente
+
+Al activar el check de **Editar tabla de cuotas**, se habilitan los campos en
+la tabla lateral derecha para que puedas modificar cada cuota manualmente.
+
+<Note>
+  Esta tabla es **informativa** y muestra el detalle de los pagos mensuales. Es
+  especialmente útil si necesitas ajustes personalizados en cada monto.
+</Note>
+
+Una vez activada la opción:
+
+- Los campos en la columna **Monto** de la tabla serán editables.
+- Puedes:
+  - **Modificar cuotas individuales**
+  - **Eliminar una cuota específica**
+  - **Agregar nuevas cuotas** desde el botón `+Cuota`.
+  - **Crear +enganches** adicionales desde el botón `+Enganches`.
+
+<Check>
+  Si las cuotas están correctamente configuradas, las diferencias en la parte
+  inferior se mostrarán como `$0.00`, lo cual indica que no hay desajustes.
+</Check>
+
+#### Indicadores de diferencia
+
+Verás tres campos clave:
+
+- **Diferencia con enganche:** diferencia entre el enganche ingresado y el que suma en la tabla.
+- **Diferencia con cuota:** diferencia entre lo proyectado y lo editado en cuotas.
+- **Diferencia con precio final:** validación final del monto global.
+
+<CardGroup cols={2}>
+  <Card title="Ejemplo correcto">
+    Diferencia con enganche: $0.00, 
+    Diferencia con cuota: $0.00,   
+    Diferencia con precio final: $0.00,
+    ✅ Todo está en orden.
+  </Card>
+
+  <Card title="Ejemplo con diferencia">
+    Diferencia con enganche: $0.00, 
+    Diferencia con cuota: $15,368.40, 
+    Diferencia con precio final: $15,368.40,
+    ⚠️ Hay una diferencia pendiente por ajustar.
+  </Card>
+</CardGroup>
+
+<Note>
+  Siempre que edites o elimines cuotas, asegúrate de que las **diferencias
+  finales estén en cero** antes de finalizar la cotización. El sistema ajustará
+  automáticamente el último pago si hay un pequeño redondeo pendiente.
+</Note>
+
+### 7. Finalizar cotización
+
+Una vez configurada toda la información de la cotización, es momento de finalizarla.
+
+Al hacer clic en el botón **Finalizar cotización**, el sistema mostrará un cuadro de diálogo para confirmar la acción.
+
+<Check>
+  Si confirmas y todo está correcto, se guardará la cotización y verás un
+  mensaje indicando que ha sido enviada al correo de tu prospecto.
+</Check>
+
+---
+
+#### Resumen después de guardar
+
+Verás una pantalla con el siguiente contenido:
+
+- ID de la cotización generada (ejemplo: `#cot_AAAAbbb000`)
+- Confirmación de que ha sido asignada al prospecto
+- Enlace único para el cliente:  
+  `https://cliente-ventas-automatizadas-colorines.vercel.app/cot_AAAAbbb000`
+
+<Card title="Comparte la cotización" icon="share">
+  Puedes compartir este enlace directamente con tu cliente mediante: - Botón de
+  **Copiar** - Enviar por **WhatsApp** - Enviar por **Correo electrónico**
+</Card>
+
+---
+
+#### Proceso del cliente
+
+<Note>
+  El cliente deberá continuar su proceso desde el link que crea la cotización.
+  Para más información sobre el proceso de ventas automatizadas, da clic
+  [aquí](/procesos-digitales/ventas-automatizadas).
+</Note>
+
+#### Datos mostrados de la cotización
+
+Se mostrarán los datos previamente cargados en el punto anterior, indicando los detalles de la cotización previamente creada.
+
+El Estatus de la Cotización se mostrará en una etiqueta de color, ubicada en la parte superior derecha de estos datos, la cualnos dará el indicador del
+estado actual de la misma.
+
+<Note>
+  Para conocer más sobre los posibles **estatus de tus cotizaciones**, da clic
+  [aquí](/plataformas/estatus-cotizacion).
+</Note>
+
+#### Visualización del lote
+
+Se mostrará un mapa interactivo (chapina) con el lote marcado que ha sido cotizado, lo que permite al cliente ubicarlo fácilmente.
+
+#### Tabla de pagos
+
+<Card title="Tabla de pagos" icon="table">
+  Tabla informativa en la que podrás ver de manera detallada las fechas y los
+  montos a pagar.
+</Card>
+
+<Check>
+  Si tu prospecto está de acuerdo con la cotización, **solo queda esperar que
+  continúe con el proceso de onboarding** desde el link de ventas automatizadas.
+</Check>
+
+### Preguntas frecuentes (FAQ)
+
+<AccordionGroup>
+
+<Accordion title="¿Por qué no puedo ver todos los desarrollos disponibles?">
+  Esto puede deberse a que tu perfil de usuario tiene acceso limitado o a que el
+  desarrollo no está activo en tu zona asignada. Si crees que debería aparecer y
+  no lo ves, contacta a soporte para validar tu acceso.
+</Accordion>
+
+<Accordion title="¿Qué hago si no encuentro el lote que necesito?">
+  Asegúrate de haber seleccionado correctamente el desarrollo, proyecto y etapa.
+  Si el lote sigue sin aparecer, podría estar reservado, vendido o en proceso de
+  actualización. Contacta al área comercial para confirmar su disponibilidad.
+</Accordion>
+
+<Accordion title="¿Cómo consulto el tipo de cambio del dólar?">
+  El sistema toma como referencia el tipo de cambio vigente publicado por el
+  área financiera. Este valor se muestra automáticamente al seleccionar USD como
+  moneda. Para validarlo manualmente, consulta el tipo de cambio oficial en
+  [Banxico](https://www.banxico.org.mx).
+</Accordion>
+
+<Accordion title="¿Qué puedo hacer si seleccioné la moneda incorrecta por error?">
+  Puedes editar la cotización antes de guardarla. Si ya la generaste, te
+  recomendamos crear una nueva con la moneda correcta para evitar confusiones.
+</Accordion>
+
+<Accordion title="Me equivoqué al seleccionar el prospecto, ¿cómo lo corrijo?">
+  Si aún no has guardado la cotización, simplemente busca y selecciona al
+  prospecto correcto. Si ya fue guardada, deberás crear una nueva cotización con
+  el prospecto adecuado.
+</Accordion>
+
+</AccordionGroup>
