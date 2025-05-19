@@ -49,10 +49,9 @@
                   "plataforma-actual/crm/buscar-cotizacion",
                   {
                     "group": "Cotizacion",
-                    "pages": [
+                    "pages": [  
                       "plataforma-actual/crm/cotizacion/etapas-cotizacion",
                       "plataforma-actual/crm/cotizacion/detalles-cotizacion",
-                      "plataforma-actual/crm/cotizacion/descargar-cotizacion",
                       "plataforma-actual/crm/cotizacion/cancelar-cotizacion"
                     ]
                   }
@@ -61,28 +60,17 @@
               {
                 "group": "Ventas",
                 "pages": [
-                  "plataforma-actual/ventas/etapas-de-una-venta",
+                  "plataforma-actual/ventas/vista-principal-ventas",
                   "plataforma-actual/ventas/buscar-venta",
-                  {
-                    "group": "Elementos de una venta",
-                    "pages": [
-                      "plataforma-actual/ventas/elementos-ventas/detalle-de-la-venta",
-                      "plataforma-actual/ventas/elementos-ventas/asesor-de-venta",
-                      "plataforma-actual/ventas/elementos-ventas/desarrollo-venta",
-                      "plataforma-actual/ventas/elementos-ventas/documentos-venta",
-                      "plataforma-actual/ventas/elementos-ventas/propietario-venta",
-                      "plataforma-actual/ventas/elementos-ventas/contrato-venta",
-                      "plataforma-actual/ventas/elementos-ventas/cobranza-venta"
-                    ]
-                  }
+                  "plataforma-actual/ventas/acciones-ventas",
+                  "plataforma-actual/ventas/detalles-venta"
                 ]
               },
               {
                 "group": "Clientes",
                 "pages": [
                   "plataforma-actual/clientes/vista-principal-de-clientes",
-                  "plataforma-actual/clientes/buscar-clientes",
-                  "plataforma-actual/clientes/reporte-de-nuevos-clientes"
+                  "plataforma-actual/clientes/buscar-clientes"
                 ]
               },
               {
