@@ -60,20 +60,8 @@
               {
                 "group": "Ventas",
                 "pages": [
-                  "plataforma-actual/ventas/etapas-de-una-venta",
-                  "plataforma-actual/ventas/buscar-venta",
-                  {
-                    "group": "Elementos de una venta",
-                    "pages": [
-                      "plataforma-actual/ventas/elementos-ventas/detalle-de-la-venta",
-                      "plataforma-actual/ventas/elementos-ventas/asesor-de-venta",
-                      "plataforma-actual/ventas/elementos-ventas/desarrollo-venta",
-                      "plataforma-actual/ventas/elementos-ventas/documentos-venta",
-                      "plataforma-actual/ventas/elementos-ventas/propietario-venta",
-                      "plataforma-actual/ventas/elementos-ventas/contrato-venta",
-                      "plataforma-actual/ventas/elementos-ventas/cobranza-venta"
-                    ]
-                  }
+                  "plataforma-actual/ventas/detalles-venta",
+                  "plataforma-actual/ventas/buscar-venta"
                 ]
               },
               {
