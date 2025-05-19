@@ -1,0 +1,139 @@
+Esta sección te permite visualizar y hacer seguimiento a todas las ventas concretadas dentro del sistema, junto con su avance y estatus actual.
+
+---
+
+## 1. Funcionalidad principal
+
+Desde esta vista podrás:
+
+- Ver todas las **ventas completadas**
+- Aplicar **filtros por fechas** y por **cliente o lote**
+- Identificar el **avance del proceso** de cada venta
+- Ver montos totales y enganches consolidados
+
+---
+
+## 2. Filtros disponibles
+
+En la parte superior de la vista podrás aplicar los siguientes filtros:
+
+- **Rango de fechas**: para ver ventas realizadas en un periodo específico.
+- **Búsqueda por cliente o lote**: encuentra rápidamente una venta usando nombre o código de lote.
+
+👉 Para más detalles, consulta la sección: [Buscar ventas](../ventas/buscar-venta)
+
+---
+
+## 3. Tarjetas resumen
+
+Debajo de los filtros, se muestran tarjetas con datos globales:
+
+- **Ventas**: cantidad total de ventas concretadas y su monto acumulado.
+- **Apartados**: número de clientes que han pagado el apartado.
+- **Enganches**: monto acumulado en enganches.
+
+<Info>
+  Estos indicadores se actualizan en tiempo real conforme se registran nuevas
+  ventas.
+</Info>
+
+---
+
+## 4. Tabla de ventas
+
+La tabla muestra la información detallada de cada venta, incluyendo:
+
+- **Fecha** de la venta
+- **Cliente** involucrado
+- **Asesor** responsable
+- **Proyecto / Lote**
+- **Monto total**
+- **Avance** del proceso
+
+<Check>
+  Puedes acceder a más acciones desde los **tres puntos** al final de cada fila.
+</Check>
+
+<Note>
+  Si una venta tiene cuotas vencidas, verás una etiqueta adicional indicando
+  cuántas están pendientes.
+</Note>
+
+---
+
+## 5. Estatus de una venta
+
+Cada venta puede tener uno de los siguientes estatus, que reflejan su avance en el proceso:
+
+### 📍 Apartado
+
+El cliente realizó el pago inicial para reservar su lote.
+
+### 🗂️ Documentación
+
+El cliente está cargando o validando su información y archivos requeridos.
+
+### 🖊️ Firma en proceso
+
+El contrato está en revisión y pendiente de firma.
+
+### ✅ Contrato firmado
+
+El contrato ya ha sido formalizado por el cliente. Aquí inicia el seguimiento postventa.
+
+### ⚠️ Cartera vencida parcial
+
+El cliente tiene pagos atrasados, pero aún no son suficientes para considerarlo moroso (menos de 4 cuotas vencidas).
+
+### ❌ Cartera vencida
+
+Hay **4 o más cuotas vencidas**. Esta venta está en riesgo de cancelación si no se regulariza.
+
+<Card>
+  <b>Importante:</b>
+  <br />
+  El sistema indica cuántas cuotas están vencidas para facilitar el seguimiento.
+</Card>
+
+### 🏁 Finalizada
+
+El proceso de pago ha concluido, pero aún no se ha generado la escritura.
+
+### 🧾 Escriturado
+
+El cliente ha completado todos los pagos y ya cuenta con las escrituras de su propiedad.
+
+---
+
+## Preguntas frecuentes
+
+<AccordionGroup type="multiple">
+  <Accordion title="¿Qué ventas aparecen en esta vista?">
+    Solo las ventas que ya han sido formalizadas mediante firma de contrato, o aquellas que están en proceso luego de que el cliente ha realizado su apartado.
+  </Accordion>
+
+{" "}
+
+<Accordion title="¿Qué significa el estatus 'Cartera vencida parcial'?">
+  Indica que el cliente tiene menos de 4 cuotas vencidas. Es una alerta
+  preventiva.
+</Accordion>
+
+{" "}
+
+<Accordion title="¿Qué pasa si una venta tiene el estatus 'Escriturado'?">
+  Significa que el cliente ha concluido todo el proceso y ya tiene la escritura
+  oficial de su lote.
+</Accordion>
+
+{" "}
+
+<Accordion title="¿Puedo ver más detalles de una venta desde esta vista?">
+  Sí. Da clic en los tres puntos del lado derecho para acceder a más opciones o
+  visualizar su resumen.
+</Accordion>
+
+  <Accordion title="¿Por qué no veo ciertas ventas aquí?">
+    Asegúrate de no tener filtros activos que limiten los resultados. También puedes revisar desde la opción de búsqueda por lote o cliente.
+  </Accordion>
+</AccordionGroup>
