@@ -80,8 +80,7 @@
                 "group": "Clientes",
                 "pages": [
                   "plataforma-actual/clientes/vista-principal-de-clientes",
-                  "plataforma-actual/clientes/buscar-clientes",
-                  "plataforma-actual/clientes/reporte-de-nuevos-clientes"
+                  "plataforma-actual/clientes/buscar-clientes"
                 ]
               },
               {
