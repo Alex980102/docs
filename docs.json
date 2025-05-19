@@ -11,30 +11,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Organización",
-        "groups": [
-          {
-            "group": "Inicio",
-            "pages": [
-              "introduction"
-            ]
-          },
-          {
-            "group": "Introducción",
-            "pages": [
-              "introduccion/que-es-colorines",
-              "introduccion/historia-impacto"
-            ]
-          },
-          {
-            "group": "Ecosistema",
-            "pages": [
-              "ecosistema/usuarios"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Plataformas",
         "groups": [
           {
