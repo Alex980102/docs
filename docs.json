@@ -52,7 +52,6 @@
                     "pages": [  
                       "plataforma-actual/crm/cotizacion/etapas-cotizacion",
                       "plataforma-actual/crm/cotizacion/detalles-cotizacion",
-                      "plataforma-actual/crm/cotizacion/descargar-cotizacion",
                       "plataforma-actual/crm/cotizacion/cancelar-cotizacion"
                     ]
                   }
