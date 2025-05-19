@@ -60,8 +60,9 @@
               {
                 "group": "Ventas",
                 "pages": [
-                  "plataforma-actual/ventas/detalles-venta",
-                  "plataforma-actual/ventas/buscar-venta"
+                  "plataforma-actual/ventas/vista-principal-ventas",
+                  "plataforma-actual/ventas/buscar-venta",
+                  "plataforma-actual/ventas/detalles-venta"
                 ]
               },
               {
