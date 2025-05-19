@@ -49,7 +49,7 @@
                   "plataforma-actual/crm/buscar-cotizacion",
                   {
                     "group": "Cotizacion",
-                    "pages": [
+                    "pages": [  
                       "plataforma-actual/crm/cotizacion/etapas-cotizacion",
                       "plataforma-actual/crm/cotizacion/detalles-cotizacion",
                       "plataforma-actual/crm/cotizacion/descargar-cotizacion",
