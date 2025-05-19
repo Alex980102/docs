@@ -1,0 +1,119 @@
+## Acciones disponibles en una venta
+
+Una vez que una venta ha sido completada, puedes realizar distintas acciones administrativas o comerciales para gestionarla adecuadamente. Estas opciones se encuentran dentro del botón de **acciones** (tres puntos verticales) en la tabla de ventas.
+
+---
+
+## 1. Detalle
+
+Selecciona **Detalle** para acceder al resumen completo de la venta.  
+Incluye información del cliente, lote, proyecto, monto, avances, cuotas y más.
+
+👉 [Consulta cómo funciona el detalle de la venta aquí](../ventas/detalles-venta)
+
+<Card>
+  Desde aquí puedes visualizar toda la información sin modificar nada. Es una
+  vista de solo lectura.
+</Card>
+
+---
+
+## 2. Editar propietario
+
+Esta función permite modificar la información del **cliente propietario** de la venta.  
+Puedes ajustar:
+
+- Nombre completo
+- Documento de identidad
+- Dirección
+
+<Info>
+  El correo electrónico no es editable desde esta vista, ya que está vinculado a
+  Stripe. Para cambiarlo, deberás contactar a Soporte Técnico.
+</Info>
+
+<Note>
+  Todo cambio en los datos del propietario requiere validación. Si afecta al
+  contrato, deberá realizarse un adéndum legal.
+</Note>
+
+---
+
+## 3. Transferir a cliente
+
+Permite transferir la propiedad de la venta a un nuevo cliente (cuando se requiere reemplazar completamente al comprador original).
+
+<Card>
+  Se recomienda usar esta opción solo si el cambio es total y validado por el
+  área legal. No se recomienda para simples correcciones.
+</Card>
+
+---
+
+## 6. Cancelar venta
+
+Utiliza esta opción para anular una venta activa.
+
+- El estatus cambiará a “Cancelada”
+- El cliente ya no podrá acceder a la información
+- El lote quedará disponible nuevamente en el sistema
+
+<Check>
+  Asegúrate de contar con autorización o confirmación antes de cancelar una
+  venta.
+</Check>
+
+---
+
+## Preguntas frecuentes
+
+<AccordionGroup type="multiple">
+  <Accordion title="¿Puedo modificar una venta después de completada?">
+    <AccordionItem title="¿Qué tipo de modificaciones están permitidas?">
+      Puedes modificar moneda, plazo, promoción, enganche y fecha de pago desde la opción “Editar condiciones comerciales”.
+    </AccordionItem>
+    <AccordionItem title="¿Afecta esto al contrato?">
+      Sí. Todo cambio importante puede requerir un adéndum si ya hay firma previa.
+    </AccordionItem>
+  </Accordion>
+
+{" "}
+
+<Accordion title="¿Qué diferencia hay entre 'Editar propietario' y 'Transferir a cliente'?">
+  <AccordionItem title="¿Cuándo usar 'Editar propietario'?">
+    Cuando deseas corregir o actualizar los datos del cliente actual (nombre,
+    dirección, CURP).
+  </AccordionItem>
+  <AccordionItem title="¿Cuándo usar 'Transferir a cliente'?">
+    Cuando necesitas cambiar completamente al comprador. Es decir, transferir la
+    venta a otro cliente distinto.
+  </AccordionItem>
+</Accordion>
+
+{" "}
+
+<Accordion title="¿Qué pasa si cancelo una venta por error?">
+  <AccordionItem title="¿Se puede revertir?">
+    No. Las cancelaciones son definitivas. Para continuar, deberás generar una
+    nueva venta desde CRM.
+  </AccordionItem>
+  <AccordionItem title="¿Se libera el lote?">
+    Sí. El lote queda nuevamente disponible en el sistema.
+  </AccordionItem>
+</Accordion>
+
+{" "}
+
+<Accordion title="¿Qué implica traspasar una venta?">
+  <AccordionItem title="¿El cliente cambia?">
+    No. Solo cambia el asesor responsable, manteniendo los mismos datos del
+    cliente y del lote.
+  </AccordionItem>
+</Accordion>
+
+  <Accordion title="¿Dónde veo la tabla de pagos luego de modificar condiciones?">
+    <AccordionItem title="¿Se actualiza automáticamente?">
+      Sí. Una vez guardadas las nuevas condiciones, la tabla de cuotas se recalcula y actualiza en el sistema.
+    </AccordionItem>
+  </Accordion>
+</AccordionGroup>
