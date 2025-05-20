@@ -9,140 +9,122 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Plataformas",
-        "groups": [
+        "group": "Dashboard",
+        "pages": [
+          "plataforma-actual/iniciar-sesion",
           {
-            "group": "Dashboard",
+            "group": "CRM",
             "pages": [
-              "plataforma-actual/iniciar-sesion",
+              "plataforma-actual/crm/agregar-prospecto",
+              "plataforma-actual/crm/crear-cotizacion",
+              "plataforma-actual/crm/buscar-cotizacion",
               {
-                "group": "CRM",
+                "group": "Cotizacion",
                 "pages": [
-                  "plataforma-actual/crm/agregar-prospecto",
-                  "plataforma-actual/crm/crear-cotizacion",
-                  "plataforma-actual/crm/buscar-cotizacion",
-                  {
-                    "group": "Cotizacion",
-                    "pages": [  
-                      "plataforma-actual/crm/cotizacion/etapas-cotizacion",
-                      "plataforma-actual/crm/cotizacion/detalles-cotizacion",
-                      "plataforma-actual/crm/cotizacion/cancelar-cotizacion"
-                    ]
-                  }
+                  "plataforma-actual/crm/cotizacion/etapas-cotizacion",
+                  "plataforma-actual/crm/cotizacion/detalles-cotizacion",
+                  "plataforma-actual/crm/cotizacion/cancelar-cotizacion"
                 ]
-              },
-              {
-                "group": "Ventas",
-                "pages": [
-                  "plataforma-actual/ventas/vista-principal-ventas",
-                  "plataforma-actual/ventas/buscar-venta",
-                  "plataforma-actual/ventas/acciones-ventas",
-                  "plataforma-actual/ventas/detalles-venta"
-                ]
-              },
-              {
-                "group": "Clientes",
-                "pages": [
-                  "plataforma-actual/clientes/vista-principal-de-clientes",
-                  "plataforma-actual/clientes/buscar-clientes"
-                ]
-              },
-              {
-                "group": "Canales",
-                "pages": [
-                  "plataforma-actual/canales/listado-de-canales"
-                ]
-              },
-              {
-                "group": "Comisiones",
-                "pages": [
-                  "plataforma-actual/comisiones/recibos"
-                ]
-              },
-              {
-                "group": "Campañas",
-                "pages": [
-                  "plataforma-actual/campanias/informacion-campanias"
-                ]
-              },
-              "plataforma-actual/diagnostico-sistemas",
-              "plataforma-actual/funcionalidades-clave",
-              "plataforma-actual/puntos-dolor"
+              }
             ]
           },
           {
-            "group": "App Asesor",
+            "group": "Ventas",
             "pages": [
-              "vision-tecnologica/principios-guia",
-              "vision-tecnologica/estrategia-digital",
-              "vision-tecnologica/oportunidades-innovacion"
+              "plataforma-actual/ventas/vista-principal-ventas",
+              "plataforma-actual/ventas/buscar-venta",
+              "plataforma-actual/ventas/acciones-ventas",
+              "plataforma-actual/ventas/detalles-venta"
             ]
           },
           {
-            "group": "Portal del cliente",
+            "group": "Clientes",
             "pages": [
-              "arquitectura-datos/portal-cliente",
-              "arquitectura-datos/modelo-datos",
-              "arquitectura-datos/flujos-informacion",
-              "arquitectura-datos/inteligencia-negocio"
+              "plataforma-actual/clientes/vista-principal-de-clientes",
+              "plataforma-actual/clientes/buscar-clientes"
             ]
           },
           {
-            "group": "Onboarding",
+            "group": "Canales",
             "pages": [
-              "procesos-digitales/ventas-automatizadas",
-              "procesos-digitales/digitalizacion-ventas",
-              "procesos-digitales/integracion-departamental",
-              "procesos-digitales/experiencia-usuario"
+              "plataforma-actual/canales/listado-de-canales"
             ]
-          }
+          },
+          {
+            "group": "Comisiones",
+            "pages": [
+              "plataforma-actual/comisiones/recibos"
+            ]
+          },
+          {
+            "group": "Campañas",
+            "pages": [
+              "plataforma-actual/campanias/informacion-campanias"
+            ]
+          },
+          "plataforma-actual/diagnostico-sistemas",
+          "plataforma-actual/funcionalidades-clave",
+          "plataforma-actual/puntos-dolor"
         ]
-
       },
       {
-        "tab": "Recursos",
-        "groups": [
-          {
-            "group": "Referencias",
-            "pages": [
-              "recursos/glosario-tecnico",
-              "recursos/estandares-referencia"
-            ]
-          }
+        "group": "App Asesor",
+        "pages": [
+          "vision-tecnologica/principios-guia",
+          "vision-tecnologica/estrategia-digital",
+          "vision-tecnologica/oportunidades-innovacion"
+        ]
+      },
+      {
+        "group": "Portal del cliente",
+        "pages": [
+          "arquitectura-datos/portal-cliente",
+          "arquitectura-datos/modelo-datos",
+          "arquitectura-datos/flujos-informacion",
+          "arquitectura-datos/inteligencia-negocio"
+        ]
+      },
+      {
+        "group": "Onboarding",
+        "pages": [
+          "procesos-digitales/ventas-automatizadas",
+          "procesos-digitales/digitalizacion-ventas",
+          "procesos-digitales/integracion-departamental",
+          "procesos-digitales/experiencia-usuario"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Sitio Web",
-          "href": "https://grupocolorines.mx",
-          "icon": "globe"
-        },
-        {
-          "anchor": "Dashboard",
-          "href": "https://dashboard.grupocolorines.mx/",
-          "icon": "chart-line"
-        },
-        {
-          "anchor": "Portal del Cliente",
-          "href": "https://portaldelcliente.grupocolorines.mx",
-          "icon": "user"
-        },
-        {
-          "anchor": "App Asesor",
-          "href": "https://appasesor.grupocolorines.mx/",
-          "icon": "mobile"
-        },
-        {
-          "anchor": "Status",
-          "href": "https://colorines.betteruptime.com",
-          "icon": "server"
-        }
-      ]
-    }
+    ]
+  },
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Sitio Web",
+        "href": "https://grupocolorines.mx",
+        "icon": "globe"
+      },
+      {
+        "anchor": "Dashboard",
+        "href": "https://dashboard.grupocolorines.mx/",
+        "icon": "chart-line"
+      },
+      {
+        "anchor": "Portal del Cliente",
+        "href": "https://portaldelcliente.grupocolorines.mx",
+        "icon": "user"
+      },
+      {
+        "anchor": "App Asesor",
+        "href": "https://appasesor.grupocolorines.mx/",
+        "icon": "mobile"
+      },
+      {
+        "anchor": "Status",
+        "href": "https://colorines.betteruptime.com",
+        "icon": "server"
+      }
+    ]
   },
   "logo": {
     "light": "/logo/logo.png",
