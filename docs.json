@@ -9,9 +9,9 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Organización",
+        "dropdown": "Organización",
         "groups": [
           {
             "group": "Inicio",
@@ -35,7 +35,7 @@
         ]
       },
       {
-        "tab": "Plataformas",
+        "dropdown": "Plataformas",
         "groups": [
           {
             "group": "Dashboard",
@@ -121,7 +121,7 @@
 
       },
       {
-        "tab": "Recursos",
+        "dropdown": "Recursos",
         "groups": [
           {
             "group": "Referencias",
