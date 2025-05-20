@@ -9,7 +9,33 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
-        "tab": "Plataformas",
+    "dropdowns": [
+      {
+        "dropdown": "Organización",
+        "groups": [
+          {
+            "group": "Inicio",
+            "pages": [
+              "introduction"
+            ]
+          },
+          {
+            "group": "Introducción",
+            "pages": [
+              "introduccion/que-es-colorines",
+              "introduccion/historia-impacto"
+            ]
+          },
+          {
+            "group": "Ecosistema",
+            "pages": [
+              "ecosistema/usuarios"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Plataformas",
         "groups": [
           {
             "group": "Dashboard",
@@ -91,36 +117,51 @@
               "procesos-digitales/experiencia-usuario"
             ]
           }
-    ]
-  },
-  "global": {
-    "anchors": [
-      {
-        "anchor": "Sitio Web",
-        "href": "https://grupocolorines.mx",
-        "icon": "globe"
+        ]
+
       },
       {
-        "anchor": "Dashboard",
-        "href": "https://dashboard.grupocolorines.mx/",
-        "icon": "chart-line"
-      },
-      {
-        "anchor": "Portal del Cliente",
-        "href": "https://portaldelcliente.grupocolorines.mx",
-        "icon": "user"
-      },
-      {
-        "anchor": "App Asesor",
-        "href": "https://appasesor.grupocolorines.mx/",
-        "icon": "mobile"
-      },
-      {
-        "anchor": "Status",
-        "href": "https://colorines.betteruptime.com",
-        "icon": "server"
+        "dropdown": "Recursos",
+        "groups": [
+          {
+            "group": "Referencias",
+            "pages": [
+              "recursos/glosario-tecnico",
+              "recursos/estandares-referencia"
+            ]
+          }
+        ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Sitio Web",
+          "href": "https://grupocolorines.mx",
+          "icon": "globe"
+        },
+        {
+          "anchor": "Dashboard",
+          "href": "https://dashboard.grupocolorines.mx/",
+          "icon": "chart-line"
+        },
+        {
+          "anchor": "Portal del Cliente",
+          "href": "https://portaldelcliente.grupocolorines.mx",
+          "icon": "user"
+        },
+        {
+          "anchor": "App Asesor",
+          "href": "https://appasesor.grupocolorines.mx/",
+          "icon": "mobile"
+        },
+        {
+          "anchor": "Status",
+          "href": "https://colorines.betteruptime.com",
+          "icon": "server"
+        }
+      ]
+    }
   },
   "logo": {
     "light": "/logo/logo.png",
