@@ -9,57 +9,88 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
-    "groups": [
-      {
-        "group": "Dashboard",
-        "pages": [
-          "plataforma-actual/iniciar-sesion",
-          "plataforma-actual/agregar-prospecto",
-          "plataforma-actual/crear-cotizacion",
-          "plataforma-actual/buscar-cotizacion",
-          "plataforma-actual/cotizacion/etapas-cotizacion",
-          "plataforma-actual/cotizacion/detalles-cotizacion",
-          "plataforma-actual/cotizacion/cancelar-cotizacion",
-          "plataforma-actual/vista-principal-ventas",
-          "plataforma-actual/buscar-venta",
-          "plataforma-actual/acciones-ventas",
-          "plataforma-actual/detalles-venta",
-          "plataforma-actual/vista-principal-de-clientes",
-          "plataforma-actual/buscar-clientes",
-          "plataforma-actual/listado-de-canales",
-          "plataforma-actual/recibos",
-          "plataforma-actual/informacion-campanias",
-          "plataforma-actual/diagnostico-sistemas",
-          "plataforma-actual/funcionalidades-clave",
-          "plataforma-actual/puntos-dolor"
-        ]
-      },
-      {
-        "group": "App Asesor",
-        "pages": [
-          "vision-tecnologica/principios-guia",
-          "vision-tecnologica/estrategia-digital",
-          "vision-tecnologica/oportunidades-innovacion"
-        ]
-      },
-      {
-        "group": "Portal del cliente",
-        "pages": [
-          "arquitectura-datos/portal-cliente",
-          "arquitectura-datos/modelo-datos",
-          "arquitectura-datos/flujos-informacion",
-          "arquitectura-datos/inteligencia-negocio"
-        ]
-      },
-      {
-        "group": "Onboarding",
-        "pages": [
-          "procesos-digitales/ventas-automatizadas",
-          "procesos-digitales/digitalizacion-ventas",
-          "procesos-digitales/integracion-departamental",
-          "procesos-digitales/experiencia-usuario"
-        ]
-      }
+        "tab": "Plataformas",
+        "groups": [
+          {
+            "group": "Dashboard",
+            "pages": [
+              "plataforma-actual/iniciar-sesion",
+              {
+                "group": "CRM",
+                "pages": [
+                  "plataforma-actual/crm/agregar-prospecto",
+                  "plataforma-actual/crm/crear-cotizacion",
+                  "plataforma-actual/crm/buscar-cotizacion",
+                  "plataforma-actual/crm/etapas-cotizacion",
+                  "plataforma-actual/crm/detalles-cotizacion",
+                  "plataforma-actual/crm/cancelar-cotizacion"
+                ]
+              },
+              {
+                "group": "Ventas",
+                "pages": [
+                  "plataforma-actual/ventas/vista-principal-ventas",
+                  "plataforma-actual/ventas/buscar-venta",
+                  "plataforma-actual/ventas/acciones-ventas",
+                  "plataforma-actual/ventas/detalles-venta"
+                ]
+              },
+              {
+                "group": "Clientes",
+                "pages": [
+                  "plataforma-actual/clientes/vista-principal-de-clientes",
+                  "plataforma-actual/clientes/buscar-clientes"
+                ]
+              },
+              {
+                "group": "Canales",
+                "pages": [
+                  "plataforma-actual/canales/listado-de-canales"
+                ]
+              },
+              {
+                "group": "Comisiones",
+                "pages": [
+                  "plataforma-actual/comisiones/recibos"
+                ]
+              },
+              {
+                "group": "Campañas",
+                "pages": [
+                  "plataforma-actual/campanias/informacion-campanias"
+                ]
+              },
+              "plataforma-actual/diagnostico-sistemas",
+              "plataforma-actual/funcionalidades-clave",
+              "plataforma-actual/puntos-dolor"
+            ]
+          },
+          {
+            "group": "App Asesor",
+            "pages": [
+              "vision-tecnologica/principios-guia",
+              "vision-tecnologica/estrategia-digital",
+              "vision-tecnologica/oportunidades-innovacion"
+            ]
+          },
+          {
+            "group": "Portal del cliente",
+            "pages": [
+              "arquitectura-datos/portal-cliente",
+              "arquitectura-datos/modelo-datos",
+              "arquitectura-datos/flujos-informacion",
+              "arquitectura-datos/inteligencia-negocio"
+            ]
+          },
+          {
+            "group": "Onboarding",
+            "pages": [
+              "procesos-digitales/ventas-automatizadas",
+              "procesos-digitales/digitalizacion-ventas",
+              "procesos-digitales/integracion-departamental",
+              "procesos-digitales/experiencia-usuario"
+            ]
+          }
     ]
   },
   "global": {
