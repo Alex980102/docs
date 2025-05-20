@@ -47,14 +47,9 @@
                   "plataforma-actual/crm/agregar-prospecto",
                   "plataforma-actual/crm/crear-cotizacion",
                   "plataforma-actual/crm/buscar-cotizacion",
-                  {
-                    "group": "Cotizacion",
-                    "pages": [  
-                      "plataforma-actual/crm/cotizacion/etapas-cotizacion",
-                      "plataforma-actual/crm/cotizacion/detalles-cotizacion",
-                      "plataforma-actual/crm/cotizacion/cancelar-cotizacion"
-                    ]
-                  }
+                  "plataforma-actual/crm/etapas-cotizacion",
+                  "plataforma-actual/crm/detalles-cotizacion",
+                  "plataforma-actual/crm/cancelar-cotizacion"
                 ]
               },
               {
