@@ -14,56 +14,21 @@
         "group": "Dashboard",
         "pages": [
           "plataforma-actual/iniciar-sesion",
-          {
-            "group": "CRM",
-            "pages": [
-              "plataforma-actual/crm/agregar-prospecto",
-              "plataforma-actual/crm/crear-cotizacion",
-              "plataforma-actual/crm/buscar-cotizacion",
-              {
-                "group": "Cotizacion",
-                "pages": [
-                  "plataforma-actual/crm/cotizacion/etapas-cotizacion",
-                  "plataforma-actual/crm/cotizacion/detalles-cotizacion",
-                  "plataforma-actual/crm/cotizacion/cancelar-cotizacion"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Ventas",
-            "pages": [
-              "plataforma-actual/ventas/vista-principal-ventas",
-              "plataforma-actual/ventas/buscar-venta",
-              "plataforma-actual/ventas/acciones-ventas",
-              "plataforma-actual/ventas/detalles-venta"
-            ]
-          },
-          {
-            "group": "Clientes",
-            "pages": [
-              "plataforma-actual/clientes/vista-principal-de-clientes",
-              "plataforma-actual/clientes/buscar-clientes"
-            ]
-          },
-          {
-            "group": "Canales",
-            "pages": [
-              "plataforma-actual/canales/listado-de-canales"
-            ]
-          },
-          {
-            "group": "Comisiones",
-            "pages": [
-              "plataforma-actual/comisiones/recibos"
-            ]
-          },
-          {
-            "group": "Campañas",
-            "pages": [
-              "plataforma-actual/campanias/informacion-campanias"
-            ]
-          },
+          "plataforma-actual/crm/agregar-prospecto",
+          "plataforma-actual/crm/crear-cotizacion",
+          "plataforma-actual/crm/buscar-cotizacion",
+          "plataforma-actual/crm/cotizacion/etapas-cotizacion",
+          "plataforma-actual/crm/cotizacion/detalles-cotizacion",
+          "plataforma-actual/crm/cotizacion/cancelar-cotizacion",
+          "plataforma-actual/ventas/vista-principal-ventas",
+          "plataforma-actual/ventas/buscar-venta",
+          "plataforma-actual/ventas/acciones-ventas",
+          "plataforma-actual/ventas/detalles-venta",
+          "plataforma-actual/clientes/vista-principal-de-clientes",
+          "plataforma-actual/clientes/buscar-clientes",
+          "plataforma-actual/canales/listado-de-canales",
+          "plataforma-actual/comisiones/recibos",
+          "plataforma-actual/campanias/informacion-campanias",
           "plataforma-actual/diagnostico-sistemas",
           "plataforma-actual/funcionalidades-clave",
           "plataforma-actual/puntos-dolor"
