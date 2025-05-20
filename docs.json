@@ -44,12 +44,12 @@
               {
                 "group": "crm",
                 "pages": [
-                  "plataforma-actual/crm/agregar-prospecto",
-                  "plataforma-actual/crm/crear-cotizacion",
-                  "plataforma-actual/crm/buscar-cotizacion",
-                  "plataforma-actual/crm/etapas-cotizacion",
-                  "plataforma-actual/crm/detalles-cotizacion",
-                  "plataforma-actual/crm/cancelar-cotizacion"
+                  "plataforma-actual/crm_docs/agregar-prospecto",
+                  "plataforma-actual/crm_docs/crear-cotizacion",
+                  "plataforma-actual/crm_docs/buscar-cotizacion",
+                  "plataforma-actual/crm_docs/etapas-cotizacion",
+                  "plataforma-actual/crm_docs/detalles-cotizacion",
+                  "plataforma-actual/crm_docs/cancelar-cotizacion"
                 ]
               },
               {
