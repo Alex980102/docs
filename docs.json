@@ -42,7 +42,7 @@
             "pages": [
               "plataforma-actual/iniciar-sesion",
               {
-                "group": "crm",
+                "group": "CRM",
                 "pages": [
                   "plataforma-actual/crm_docs/agregar-prospecto",
                   "plataforma-actual/crm_docs/crear-cotizacion",
@@ -53,7 +53,7 @@
                 ]
               },
               {
-                "group": "ventas",
+                "group": "Ventas",
                 "pages": [
                   "plataforma-actual/ventas/vista-principal-ventas",
                   "plataforma-actual/ventas/buscar-venta",
@@ -62,26 +62,26 @@
                 ]
               },
               {
-                "group": "clientes",
+                "group": "Clientes",
                 "pages": [
                   "plataforma-actual/clientes/vista-principal-de-clientes",
                   "plataforma-actual/clientes/buscar-clientes"
                 ]
               },
               {
-                "group": "canales",
+                "group": "Canales",
                 "pages": [
                   "plataforma-actual/canales/listado-de-canales"
                 ]
               },
               {
-                "group": "comisiones",
+                "group": "Comisiones",
                 "pages": [
                   "plataforma-actual/comisiones/recibos"
                 ]
               },
               {
-                "group": "campañas",
+                "group": "Campañas",
                 "pages": [
                   "plataforma-actual/campanias/informacion-campanias"
                 ]
