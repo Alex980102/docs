@@ -11,30 +11,6 @@
   "navigation": {
     "dropdowns": [
       {
-        "dropdown": "Organización",
-        "groups": [
-          {
-            "group": "Inicio",
-            "pages": [
-              "introduction"
-            ]
-          },
-          {
-            "group": "Introducción",
-            "pages": [
-              "introduccion/que-es-colorines",
-              "introduccion/historia-impacto"
-            ]
-          },
-          {
-            "group": "Ecosistema",
-            "pages": [
-              "ecosistema/usuarios"
-            ]
-          }
-        ]
-      },
-      {
         "dropdown": "Plataformas",
         "groups": [
           {
@@ -85,51 +61,34 @@
                 "pages": [
                   "plataforma-actual/campanias/informacion-campanias"
                 ]
-              },
-              "plataforma-actual/diagnostico-sistemas",
-              "plataforma-actual/funcionalidades-clave",
-              "plataforma-actual/puntos-dolor"
+              }
             ]
           },
           {
             "group": "App Asesor",
             "pages": [
-              "vision-tecnologica/principios-guia",
-              "vision-tecnologica/estrategia-digital",
-              "vision-tecnologica/oportunidades-innovacion"
+              "vision-tecnologica/principios-guia"
             ]
           },
           {
             "group": "Portal del cliente",
             "pages": [
-              "arquitectura-datos/portal-cliente",
-              "arquitectura-datos/modelo-datos",
-              "arquitectura-datos/flujos-informacion",
-              "arquitectura-datos/inteligencia-negocio"
+              "arquitectura-datos/portal-cliente"
             ]
           },
           {
             "group": "Onboarding",
             "pages": [
-              "procesos-digitales/ventas-automatizadas",
-              "procesos-digitales/digitalizacion-ventas",
-              "procesos-digitales/integracion-departamental",
-              "procesos-digitales/experiencia-usuario"
+              "procesos-digitales/ventas-automatizadas"
             ]
           }
         ]
 
       },
       {
-        "dropdown": "Recursos",
-        "groups": [
-          {
-            "group": "Referencias",
-            "pages": [
-              "recursos/glosario-tecnico",
-              "recursos/estandares-referencia"
-            ]
-          }
+        "dropdown": "Changelog",
+        "pages": [
+          "actualizacion-de-producto"
         ]
       }
     ],
