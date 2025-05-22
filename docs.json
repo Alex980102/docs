@@ -12,6 +12,7 @@
     "dropdowns": [
       {
         "dropdown": "Plataformas",
+        "icon": "laptop-mobile",
         "groups": [
           {
             "group": "Dashboard",
@@ -88,6 +89,7 @@
       },
       {
         "dropdown": "Changelog",
+        "icon": "clock-rotate-left",
         "pages": [
           "actualizacion-de-producto"
         ]
