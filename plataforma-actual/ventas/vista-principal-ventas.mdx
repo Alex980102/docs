@@ -6,10 +6,29 @@ Esta sección te permite visualizar y hacer seguimiento a todas las ventas concr
 
 Desde esta vista podrás:
 
-- Ver todas las **ventas completadas**
-- Aplicar **filtros por fechas** y por **cliente o lote**
-- Identificar el **avance del proceso** de cada venta
-- Ver montos totales y enganches consolidados
+<CardGroup cols={2}>
+  <Card title="Ventas completadas" icon="house-circle-check">
+    Consulta todas las ventas que ya han sido formalizadas en el sistema, desde la sección principal del módulo.
+  </Card>
+
+{" "}
+
+<Card title="Filtros por fechas o cliente" icon="calendar-range">
+  Filtra por rango de fechas, nombre del cliente o lote específico para acotar
+  tus resultados de forma eficiente.
+</Card>
+
+{" "}
+
+<Card title="Avance del proceso" icon="loader">
+  Identifica fácilmente en qué etapa se encuentra cada venta: apartado, contrato
+  firmado, escriturado, etc.
+</Card>
+
+  <Card title="Montos y enganches" icon="wallet">
+    Visualiza el monto total de cada venta, incluyendo desglose de enganche y cuotas programadas.
+  </Card>
+</CardGroup>
 
 ---
 
@@ -20,8 +39,10 @@ En la parte superior de la vista podrás aplicar los siguientes filtros:
 - **Rango de fechas**: para ver ventas realizadas en un periodo específico.
 - **Búsqueda por cliente o lote**: encuentra rápidamente una venta usando nombre o código de lote.
 
-👉 Para más detalles, consulta la sección: [Buscar ventas](../ventas/buscar-venta)
-
+<Tip>
+  Para más detalles, consulta la sección: [Buscar
+  ventas](../ventas/buscar-venta)
+</Tip>
 ---
 
 ## 3. Tarjetas resumen
@@ -43,12 +64,14 @@ Debajo de los filtros, se muestran tarjetas con datos globales:
 
 La tabla muestra la información detallada de cada venta, incluyendo:
 
-- **Fecha** de la venta
-- **Cliente** involucrado
-- **Asesor** responsable
-- **Proyecto / Lote**
-- **Monto total**
-- **Avance** del proceso
+| Campo              | Descripción                                                               |
+| ------------------ | ------------------------------------------------------------------------- |
+| Fecha              | Fecha en que se concretó la venta.                                        |
+| Cliente            | Nombre del cliente involucrado en la transacción.                         |
+| Asesor             | Asesor responsable que gestionó la venta.                                 |
+| Proyecto / Lote    | Desarrollo, etapa y lote asignado al cliente.                             |
+| Monto total        | Monto final de la venta, incluyendo enganche y cuotas programadas.        |
+| Avance del proceso | Estatus actual de la venta (ej. Apartado, Contrato firmado, Escriturado). |
 
 <Check>
   Puedes acceder a más acciones desde los **tres puntos** al final de cada fila.
@@ -63,49 +86,57 @@ La tabla muestra la información detallada de cada venta, incluyendo:
 
 ## 5. Estatus de una venta
 
-Cada venta puede tener uno de los siguientes estatus, que reflejan su avance en el proceso:
+Cada venta puede tener uno de los siguientes estatus, que reflejan su avance en el proceso. A continuación, se describen en detalle:
 
-### 📍 Apartado
-
-El cliente realizó el pago inicial para reservar su lote.
-
-### 🗂️ Documentación
-
-El cliente está cargando o validando su información y archivos requeridos.
-
-### 🖊️ Firma en proceso
-
-El contrato está en revisión y pendiente de firma.
-
-### ✅ Contrato firmado
-
-El contrato ya ha sido formalizado por el cliente. Aquí inicia el seguimiento postventa.
-
-### ⚠️ Cartera vencida parcial
-
-El cliente tiene pagos atrasados, pero aún no son suficientes para considerarlo moroso (menos de 4 cuotas vencidas).
-
-### ❌ Cartera vencida
-
-Hay **4 o más cuotas vencidas**. Esta venta está en riesgo de cancelación si no se regulariza.
-
-<Card>
-  <b>Importante:</b>
-  <br />
-  El sistema indica cuántas cuotas están vencidas para facilitar el seguimiento.
+<Card title="Apartado" icon="bookmark">
+  El cliente realizó el pago inicial para reservar su lote. Este es el primer
+  paso posterior a la cotización y activa el proceso de venta.
 </Card>
 
-### 🏁 Finalizada
+<Card title="Documentación" icon="folder-open">
+  El cliente está cargando o validando su información y archivos requeridos para
+  formalizar su compra.
+</Card>
 
-El proceso de pago ha concluido, pero aún no se ha generado la escritura.
+<Card title="Firma en proceso" icon="pen-line">
+  El contrato está siendo revisado y está pendiente de firma electrónica. Es una
+  etapa crítica antes de formalizar la venta.
+</Card>
 
-### 🧾 Escriturado
+<Card title="Contrato firmado" icon="file-check">
+  El contrato ha sido formalizado exitosamente por el cliente. A partir de este
+  momento, inicia el seguimiento postventa.
+</Card>
 
-El cliente ha completado todos los pagos y ya cuenta con las escrituras de su propiedad.
+<Card title="Cartera vencida parcial" icon="sensor-on">
+  El cliente tiene pagos vencidos, pero aún no suficientes para considerarse en
+  morosidad (menos de 4 cuotas vencidas). Es un aviso preventivo.
+</Card>
+
+<Card title="Cartera vencida" icon="circle-exclamation">
+  El cliente acumula **4 o más cuotas vencidas**. Esta venta está en riesgo de
+  cancelación si no se regulariza su situación de pagos.
+</Card>
+
+<Note>
+  Importante: El sistema indica cuántas cuotas están vencidas para facilitar el
+  seguimiento.
+</Note>
+
+<Card title="Finalizada" icon="flag-swallowtail">
+  El proceso de pago ha concluido satisfactoriamente, pero aún no se ha generado
+  la escritura. Esta etapa indica que el cliente ha cumplido con sus
+  obligaciones financieras.
+</Card>
+
+<Card title="Escriturado" icon="house-flag">
+  El cliente ha completado todos los pagos y ya cuenta con las **escrituras
+  oficiales** de su propiedad. El proceso de venta ha sido cerrado formalmente.
+</Card>
 
 ---
 
-## Preguntas frecuentes
+### Preguntas frecuentes (FAQ)
 
 <AccordionGroup type="multiple">
   <Accordion title="¿Qué ventas aparecen en esta vista?">
