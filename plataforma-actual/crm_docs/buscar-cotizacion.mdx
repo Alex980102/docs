@@ -1,10 +1,8 @@
-### Buscar cotización
-
 Dentro del módulo de **CRM**, encontrarás la pantalla principal para gestionar y buscar cotizaciones de forma eficiente. Esta herramienta está diseñada para ofrecer una búsqueda flexible y filtros avanzados que te permitirán encontrar cualquier cotización registrada.
 
 ---
 
-#### Búsqueda general
+### Búsqueda general
 
 En la parte superior se encuentra un componente que permite:
 
@@ -13,6 +11,16 @@ En la parte superior se encuentra un componente que permite:
   - El nombre del **lote**
   - El nombre del **prospecto**
 
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  className="rounded-xl"
+  src="/images/busqueda-general-crm.mp4"
+></video>
+
 <Note>
   Este campo acepta texto parcial o completo y permite encontrar coincidencias
   en tiempo real conforme se escribe.
@@ -20,31 +28,33 @@ En la parte superior se encuentra un componente que permite:
 
 ---
 
-#### Filtros avanzados
+### Filtros avanzados
 
 Además del campo abierto, se cuenta con un panel de filtros que permite afinar los resultados aún más.
 
 <CardGroup cols={2}>
-  <Card title="Ordenar por">Fecha descendente (opción predeterminada)</Card>
-  <Card title="Filtrar por estado">
+  <Card title="Ordenar por" icon="calendar">
+    Fecha descendente (opción predeterminada)
+  </Card>
+  <Card title="Filtrar por estado" icon="ellipsis-stroke-vertical">
     Selecciona una opción como: Enviada, Guardada, Cancelada, entre otros.
   </Card>
-  <Card title="Filtrar por moneda">
+  <Card title="Filtrar por moneda" icon="money-bill-1">
     Permite filtrar cotizaciones generadas en Moneda Nacional (MXN) o Dólares
     (USD).
   </Card>
-  <Card title="Filtrar por asesor">
+  <Card title="Filtrar por asesor" icon="user">
     Puedes acotar las búsquedas por el nombre del asesor que generó la
     cotización.
   </Card>
-  <Card title="Filtrar por desarrollo">
+  <Card title="Filtrar por desarrollo" icon="diagram-project">
     Muestra únicamente las cotizaciones asociadas a un desarrollo inmobiliario
     específico.
   </Card>
-  <Card title="Filtrar por proyecto">
+  <Card title="Filtrar por proyecto" icon="rectangle-history">
     Permite seleccionar un proyecto en particular dentro del desarrollo.
   </Card>
-  <Card title="Filtrar por etapa">
+  <Card title="Filtrar por etapa" icon="tarp">
     Útil si deseas consultar cotizaciones correspondientes a una etapa
     específica.
   </Card>
@@ -54,9 +64,17 @@ Además del campo abierto, se cuenta con un panel de filtros que permite afinar 
   Puedes combinar varios filtros a la vez para obtener resultados más precisos.
 </Note>
 
+<img
+  className="rounded-xl"
+  width="600"
+  height="600"
+  noZoom
+  src="/images/busqueda-avanzada-crm.gif"
+/>
+
 ---
 
-#### Resultados
+### Resultados
 
 Una vez aplicados los filtros, la vista se actualizará con las cotizaciones correspondientes. En cada resultado podrás visualizar:
 
@@ -75,6 +93,8 @@ Una vez aplicados los filtros, la vista se actualizará con las cotizaciones cor
   Puedes hacer clic en cualquier cotización listada para visualizar su detalle
   completo, editarla o continuar con el proceso de ventas.
 </Note>
+
+### Preguntas frecuentes (FAQ)
 
 <AccordionGroup>
 
