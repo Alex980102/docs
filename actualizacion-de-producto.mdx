@@ -6,7 +6,72 @@
 
 ## Mejoras en automatización, gestión de ventas y unificación de sistemas
 
-### Intranet
+### Dashboard
+
+#### Validación de facturas - **feature**
+
+<img
+  className="rounded-xl"
+  width="500"
+  height="500"
+  src="/images/factura.png"
+/>
+
+Se incorpora un nuevo módulo que permite a los asesores cargar sus facturas directamente en Dashboard para validar el cobro de sus comisiones. Este proceso sustituye el modelo manual y mejora el control fiscal.
+
+##### Características principales:
+
+- Validación automática del XML cargado por el asesor.
+- Asociación del archivo con el RFC registrado en su perfil.
+- Cálculo y confirmación del monto a facturar con base en el corte autorizado.
+- Visualización clara de líneas pendientes de cobro por periodo.
+- Validación en tiempo real con respuesta inmediata.
+
+<Card title="Campos validados del CFDI" icon="file-lines" horizontal={true}>
+  <ul>
+    <li>RFC emisor y receptor</li>
+    <li>Régimen fiscal</li>
+    <li>Folio fiscal (UUID)</li>
+    <li>Fecha y hora de emisión</li>
+    <li>Uso del CFDI</li>
+    <li>Moneda, método y forma de pago</li>
+    <li>Claves SAT (producto/unidad)</li>
+    <li>Subtotal, impuestos, total</li>
+  </ul>
+</Card>
+
+<Card
+  title="Tipos de comprobante admitidos"
+  icon="clipboard-check"
+  horizontal={true}
+>
+  <ul>
+    <li>PUE: debe pagarse en el mismo mes de emisión</li>
+    <li>PPD: puede pagarse hasta 27 días después de su emisión</li>
+  </ul>
+</Card>
+
+##### Opinión de cumplimiento
+
+<Card
+  title="Revisión de opinión positiva del SAT"
+  icon="circle-check"
+  horizontal={true}
+>
+  <ul>
+  <li>Verificación de nombre o razón social</li>
+  <li>Estado vigente (debe incluir “POSITIVO”)</li>
+  <li>Fecha del documento (debe coincidir con el mes actual)</li>
+</ul>
+
+</Card>
+
+<Tip>
+  Conoce más acerca de este módulo desde el [módulo de
+  facturas](/plataforma-actual/canales/modulo-facturas)
+</Tip>
+
+---
 
 #### Validación y reducción de líneas duplicadas en CSV - **fix**
 
@@ -22,11 +87,6 @@
 
 - Generación automática de tres notificaciones para clientes con cartera vencida.
 - Pensado para agilizar procesos legales y contractuales.
-
-#### Validación de facturas - **feature**
-
-- Nuevo sistema de revisión para validar facturas emitidas.
-- Mejora el control y evita errores administrativos.
 
 #### Descarga de reportes de venta - **feature**
 
@@ -55,7 +115,7 @@
 
 ## Mejora en gestor de cobranza y listado de ventas nuevas
 
-### Intranet
+### Dashboard
 
 #### Listado de ventas nuevas - **feature**
 
@@ -91,7 +151,7 @@
 
 ## Integridad de datos y visualización de estructuras comerciales
 
-### Intranet
+### Dashboard
 
 #### Carga de documentos en venta - **feature**
 
