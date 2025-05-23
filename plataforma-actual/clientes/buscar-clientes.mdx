@@ -2,54 +2,65 @@ Desde esta sección puedes encontrar fácilmente a un cliente o prospecto utiliz
 
 ---
 
-## 1. ¿Dónde buscar?
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  className="rounded-xl"
+  src="/images/buscar-clientes.mp4"
+></video>
 
-En la parte superior de la vista principal de clientes encontrarás el campo:
-
-**Buscar por nombre o email**
-
-Este campo permite ingresar texto libre y filtra en tiempo real los resultados que coincidan con tu búsqueda.
+<Steps>
+  <Step title="Accede al buscador" icon="solar-system">
+    En la parte superior de la vista principal de clientes encontrarás el campo
+    de búsqueda:
+    <strong>Buscar por nombre o email</strong>
+  </Step>
+  <Step title="Escribe un valor" icon="pen-to-square">
+    Ingresa un nombre completo, parcial o un correo electrónico. El sistema irá
+    filtrando los resultados automáticamente.
+  </Step>
+  <Step title="Consulta los resultados" icon="square-info">
+    Los resultados aparecerán directamente en la tabla inferior, mostrando
+    nombre, lotes comprados, avance de pago y acciones disponibles.
+  </Step>
+</Steps>
 
 ---
 
-## 2. ¿Cómo funciona?
+## Funcionamiento del buscador
 
-Al comenzar a escribir, el sistema busca automáticamente coincidencias en:
+Al comenzar a escribir, el sistema realiza una búsqueda dinámica en tiempo real, sin necesidad de presionar Enter.
 
-- El **nombre completo** del cliente.
-- Su **correo electrónico**.
-
-<Info>
-  No necesitas presionar Enter. El sistema muestra los resultados conforme se va
-  escribiendo.
-</Info>
+<Tip>
+  Puedes usar fragmentos del nombre o del correo electrónico. Por ejemplo:
+  escribir <strong>"Us"</strong> mostrará coincidencias como "Usuario ejemplo".
+</Tip>
 
 ---
 
-## 3. Resultados filtrados
+## Visualización de resultados
 
-Los resultados que coincidan aparecerán en la tabla inferior, mostrando:
+Una vez se detecten coincidencias, la tabla mostrará:
 
-- Nombre del cliente
-- Lotes comprados
-- Avance de pago
-- Acciones disponibles
+| Campo           | Descripción                                                         |
+| --------------- | ------------------------------------------------------------------- |
+| Nombre          | Nombre completo del cliente.                                        |
+| Lotes comprados | Cantidad de lotes asignados si ya es cliente.                       |
+| Avance de pago  | Porcentaje del pago amortizado en caso de tener lotes activos.      |
+| Acciones        | Menú de tres puntos para acceder a detalles, ventas o cotizaciones. |
 
-<Card>
-  <b>Ejemplo:</b>
-  <br />
-  Si escribes "Us", aparecerán todos los registros que incluyan esas letras,
-  como "Usuario ejemplo".
-</Card>
-
-<Check>
+<Note>
   Si el resultado no aparece, asegúrate de escribir correctamente el nombre o
   correo.
-</Check>
+</Note>
 
 <Check>
-  Puedes combinar la búsqueda con el selector de <b>“Resultados por página”</b>{" "}
-  para mostrar más clientes si tienes una cartera amplia.
+  Puedes combinar la búsqueda con el selector de{" "}
+  <strong>“Resultados por página”</strong> para mostrar más clientes si tienes
+  una cartera amplia.
 </Check>
 
 ---
