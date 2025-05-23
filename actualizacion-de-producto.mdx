@@ -1,19 +1,130 @@
-# Product Updates
+> Últimos cambios y mejoras en la plataforma
 
-> New updates and improvements
+---
 
 <Update label="May 2025">
-  ## API playground stability updates
 
-- Search to find an endpoint
-- Indicate a deprecated endpoint with a tag
-- Hide auto-generated API pages from navigation
-- Upload multipart or form data files
+## Mejoras en automatización, gestión de ventas y unificación de sistemas
 
-Learn more at [API playground docs.](/api-playground/)
+### Intranet
 
-## npm i mint
+#### Validación y reducción de líneas duplicadas en CSV - **fix**
 
-Can now use `npm i mint@latest -g` to upgrade your CLI.
+- Optimización del proceso de carga de datos desde archivos CSV.
+- Prevención de duplicidades en los ingresos bancarios.
+
+#### Migración de flujo de caja al nuevo dashboard - **migration**
+
+- El módulo se trasladó desde Intranet 1 hacia el dashboard unificado.
+- Unifica la visualización financiera bajo el nuevo sistema operativo.
+
+#### Módulo de notificaciones de rescisión de contrato - **feature**
+
+- Generación automática de tres notificaciones para clientes con cartera vencida.
+- Pensado para agilizar procesos legales y contractuales.
+
+#### Validación de facturas - **feature**
+
+- Nuevo sistema de revisión para validar facturas emitidas.
+- Mejora el control y evita errores administrativos.
+
+#### Descarga de reportes de venta - **feature**
+
+- Permite exportar listados de ventas desde el sistema.
+- Incluye soporte para filtros activos y formatos ordenados para análisis.
+
+### Portal Cliente
+
+#### Nueva etiqueta visual: Pérdida de ubicación en lote - **feature**
+
+- Se añadió una etiqueta que alerta cuando el cliente ha perdido la asignación de su lote.
+- Mejora la transparencia durante el proceso postventa.
+
+### Web Tres Raíces
+
+#### Autocompra en Tres Raíces - **feature**
+
+- Habilita la autogestión de compra para clientes sin intervención del asesor.
+- Disponible únicamente en el desarrollo "Tres Raíces" desde App.
+
+</Update>
+
+---
+
+<Update label="Abr 2025">
+
+## Mejora en gestor de cobranza y listado de ventas nuevas
+
+### Intranet
+
+#### Listado de ventas nuevas - **feature**
+
+- Módulo para agregar comentarios a ventas en llamadas de éxito.
+- Mejora el seguimiento comercial y feedback por parte del equipo.
+
+#### Visualización de gestor de cobranza y flujo de caja - **improvement**
+
+- Visualización más clara del ingreso y conciliación de cuotas.
+- Buckets actualizados con nueva categorización.
+
+#### Conciliación de balances de cliente - **fix**
+
+- Permite múltiples reversos sobre el mismo ingreso.
+- Simplifica la gestión de correcciones.
+
+#### Almacenamiento con Wasabi - **fix**
+
+- Uso de almacenamiento externo para evitar errores de espacio en disco.
+
+### Portal Cliente
+
+#### Pasarela de pago - Openpay - **feature**
+
+- Integración de Openpay como nuevo proveedor de pagos.
+- Mejora la experiencia de pago y seguridad del cliente.
+
+</Update>
+
+---
+
+<Update label="Mar 2025">
+
+## Integridad de datos y visualización de estructuras comerciales
+
+### Intranet
+
+#### Carga de documentos en venta - **feature**
+
+- Permite adjuntar documentos como contratos o anexos desde la vista de venta.
+- Mejora el control documental dentro del sistema.
+
+#### Visualización de estructuras comerciales - **improvement**
+
+- Mejora en la interfaz para visualizar estructuras en el dashboard.
+- Facilita el seguimiento organizacional.
+
+#### Nuevos buckets de cobranza - **improvement**
+
+- Mejora en la clasificación de pagos e ingresos.
+- Alineado al nuevo flujo financiero.
+
+#### Importación de ingresos por CSV - **fix**
+
+- Corrección en duplicados durante cargas masivas.
+- Validación reforzada durante la importación bancaria.
+
+### Portal Cliente
+
+#### Verificación de datos de la venta - **feature**
+
+- Alertas para revisar contratos que se anularon por falta de firma.
+
+#### Verificación de datos de clientes - **feature**
+
+- Agrega validación de correo electrónico y teléfono móvil.
+
+#### Canales de atención - **feature**
+
+- Permite que el cliente agende una cita en oficinas desde su portal.
 
 </Update>
