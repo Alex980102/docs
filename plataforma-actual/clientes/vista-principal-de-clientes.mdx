@@ -5,10 +5,16 @@ Aquí puedes buscar, filtrar, generar reportes y acceder al detalle de cada clie
 
 ## 1. Contadores de resumen
 
-En la parte superior se muestran dos tarjetas:
-
-- **Clientes**: personas que ya han adquirido al menos un lote.
-- **Prospectos**: usuarios registrados que aún no han realizado una compra.
+<CardGroup cols={2}>
+  <Card title="Clientes" icon="user-check">
+    Personas que ya han adquirido al menos un lote. Puedes darles seguimiento
+    postventa desde esta vista.
+  </Card>
+  <Card title="Prospectos" icon="user-plus">
+    Usuarios registrados que aún no han concretado una compra, pero están en
+    proceso de seguimiento.
+  </Card>
+</CardGroup>
 
 <Info>
   Estos indicadores te permiten tener una visión rápida del estado de tu
@@ -21,52 +27,61 @@ En la parte superior se muestran dos tarjetas:
 
 Utiliza el campo de búsqueda para localizar rápidamente un cliente por **nombre o correo electrónico**.
 
-Al ingresar un valor, serás redirigido automáticamente a la vista de resultados:
-
-👉 [Buscar clientes](../clientes/buscar-clientes)
+<Tip>
+  Al ingresar un valor, serás redirigido automáticamente a la vista de
+  resultados: [Buscar clientes](../clientes/buscar-clientes)
+</Tip>
 
 ---
 
 ## 3. Tabla de clientes
 
-Cada fila de la tabla muestra lo siguiente:
+La tabla muestra la siguiente información por cada cliente:
 
-- **Nombre** y correo electrónico del cliente.
-- Número de **lotes comprados**.
-- **Avance de pago** por lote (si aplica).
+| Campo           | Descripción                                                             |
+| --------------- | ----------------------------------------------------------------------- |
+| Nombre          | Nombre y correo electrónico del cliente.                                |
+| Lotes comprados | Cantidad de lotes adquiridos si ya es cliente.                          |
+| Avance de pago  | Porcentaje de amortización de sus pagos, visible con barra de progreso. |
 
 <Check>
   Si el cliente ha realizado una compra, se mostrará el número de lote asignado
   junto con una barra de progreso de pago.
 </Check>
 
-<Check>
+<Note>
   Puedes ajustar el número de resultados por página desde el menú inferior.
-</Check>
+</Note>
 
 ---
 
 ## 4. Acciones disponibles (menú de tres puntos)
 
-Haz clic en el botón de **tres puntos** al final de cada fila para acceder a estas opciones:
+Haz clic en el botón de **tres puntos** al final de cada fila para acceder a las siguientes opciones:
 
-- **Detalle**: Ver toda la información del cliente.
-- **Ventas**: Accede directamente a sus ventas activas.
-- **Cotizaciones**: Visualiza sus cotizaciones activas.
+<Card title="Detalle del cliente" icon="id-card" horizontal={true}>
+  Consulta toda la información general, documentación y referidos del cliente.
+</Card>
 
-Cada uno de estos accesos lleva a una vista más detallada, donde se organiza la información en pestañas.
+<Card title="Ventas activas" icon="hand-holding-dollar" horizontal={true}>
+  Accede rápidamente a las ventas que el cliente tiene en proceso.
+</Card>
+
+<Card title="Cotizaciones activas" icon="table-tree" horizontal={true}>
+  Visualiza todas las cotizaciones asociadas al cliente que aún están vigentes.
+</Card>
 
 ---
 
 ## 5. Vista detallada del cliente
 
-Al dar clic en **“Detalle”**, se abre un panel dividido en pestañas:
+Al dar clic en **“Detalle”**, se abre un panel dividido en pestañas para consultar toda la información relevante del cliente.
 
 ### General
 
-- Información del asesor, métodos de pago, referidos, cotizaciones, ventas, y cobranza.
+- Información del asesor, métodos de pago, referidos, cotizaciones, ventas y cobranza.
 - Si el cliente fue referido por otro, aparecerá su nombre.
-- En “Cobranza” se muestra el detalle de pagos, montos y vencimientos.
+- En la pestaña “Cobranza” se muestra el detalle de pagos, montos y vencimientos.
 
 <Note>
   Los referidos permiten acumular puntos Wallet que pueden usarse como forma de
@@ -75,7 +90,7 @@ Al dar clic en **“Detalle”**, se abre un panel dividido en pestañas:
 
 ### Perfil
 
-- Aquí puedes editar los datos personales del cliente, excepto el correo electrónico.
+- Puedes editar los datos personales del cliente, excepto el correo electrónico.
 - El correo está vinculado al sistema de pagos (**Stripe**) y sólo puede modificarse desde **Soporte Técnico**.
 
 <Note>
@@ -86,15 +101,15 @@ Al dar clic en **“Detalle”**, se abre un panel dividido en pestañas:
 
 ### Documentos
 
-- Muestra los documentos que el cliente ha cargado al sistema (INE, pasaporte, comprobantes, etc.).
+- Muestra los documentos que el cliente ha cargado al sistema: INE, pasaporte, comprobantes, etc.
 
 ### Cotizaciones
 
-- Listado de todas las **cotizaciones activas** asignadas a este cliente.
+- Visualiza todas las **cotizaciones activas** asociadas al cliente.
 
 ### Ventas
 
-- Visualiza todas las **ventas activas**, junto con su estatus y detalles.
+- Consulta todas las **ventas activas**, su estatus y detalle.
 
 ---
 
