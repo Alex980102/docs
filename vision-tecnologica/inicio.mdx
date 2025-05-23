@@ -4,28 +4,34 @@ Al acceder a la App Asesor, la primera vista que encontrarás es la pantalla de 
 
 ## ¿Qué encontrarás en la pantalla de inicio?
 
-La pantalla se divide principalmente en dos módulos:
+La pantalla se divide principalmente en tres bloques:
 
-<Card title="Progreso general" icon="chart-line">
-  Muestra tu avance registrado como porcentaje y el objetivo que has configurado
-  en moneda. Es útil para visualizar qué tan cerca estás de cumplir tus metas.
+<Card title="Meta mensual" icon="bullseye-arrow" horizontal={true}>
+  Muestra tu porcentaje de avance hacia el objetivo mensual que hayas
+  establecido. Este valor se reinicia automáticamente al inicio de cada mes.
 </Card>
 
-<Card title="Actividad de cotizaciones" icon="file-lines">
-  Muestra el número total de cotizaciones creadas y cuántas de ellas se han
-  convertido en ventas.
+<Card title="Progreso financiero" icon="gem" horizontal={true}>
+  Verás reflejado tu <strong>objetivo monetario</strong> (en MXN) y tu progreso
+  real de ingresos durante el mes.
+</Card>
+
+<Card title="Actividad de cotizaciones" icon="file-lines" horizontal={true}>
+  Se muestra el número de cotizaciones que has generado y cuántas se han cerrado
+  exitosamente.
 </Card>
 
 <Note>
-  Esta sección sirve como un panel de control resumido. Revisa aquí tu progreso
-  antes de ingresar a secciones más específicas como ventas o metas.
+  Esta vista actúa como un tablero general. Desde aquí puedes hacer un chequeo
+  rápido antes de moverte a secciones como <strong>Ventas</strong> o{" "}
+  <strong>Metas</strong>.
 </Note>
 
 ---
 
 ## Acciones disponibles
 
-En esta pantalla también encontrarás un botón flotante con el signo **+** que te permitirá crear una nueva cotización de manera rápida.
+También encontrarás un botón flotante con el signo **+** que te permite iniciar una nueva cotización directamente desde esta vista.
 
 <Check>
   Al tocar el botón, podrás elegir la opción{" "}
@@ -33,39 +39,43 @@ En esta pantalla también encontrarás un botón flotante con el signo **+** que
 </Check>
 
 <Check>
-  Este flujo te redirige al proceso completo de generación de una cotización
-  nueva.
+  Esta acción te redirige al flujo completo de generación de cotización dentro
+  de la App.
 </Check>
 
 <Tip>
-  Antes de generar una cotización, asegúrate de que el cliente ya esté
-  registrado. Si no lo está, puedes registrarlo directamente desde este flujo.
+  Puedes consultar todo el proceso completo desde este
+  [enlace](/vision-tecnologica/nueva-cotizacion)
 </Tip>
+
+<Note>
+  Recuerda que debes tener al cliente previamente registrado para poder
+  continuar con la cotización.
+</Note>
 
 ---
 
-### Preguntas frecuentes (FAQ)
+## Preguntas frecuentes (FAQ)
 
 <AccordionGroup type="multiple">
   <Accordion title="¿Qué significa el porcentaje que aparece en la parte superior?">
-    Representa el avance de tus ventas actuales con respecto al objetivo que hayas configurado como meta personal.
+    Representa el avance de tus ventas actuales con respecto al objetivo mensual que hayas establecido.
   </Accordion>
 
 {" "}
 
 <Accordion title="¿Las cotizaciones que aparecen incluyen las que están vencidas?">
-  No. Solo se cuentan aquellas cotizaciones activas que siguen en proceso o que
-  han sido recientemente generadas.
+  No. Solo se cuentan las cotizaciones activas o recientemente creadas.
 </Accordion>
 
 {" "}
 
 <Accordion title="¿Puedo acceder a las cotizaciones desde esta pantalla?">
-  No directamente. Para ver el detalle de cada cotización deberás acceder a la
-  sección <strong>Ventas</strong> en el menú inferior.
+  No directamente. Para consultar o gestionar cotizaciones, ingresa a la sección{" "}
+  <strong>Ventas</strong> en el menú inferior.
 </Accordion>
 
   <Accordion title="¿Puedo modificar el objetivo que se muestra?">
-    Actualmente, el objetivo se configura desde el backend del sistema y no es editable desde la app.
+    No desde la app. El objetivo es asignado desde el backend y solo puede modificarse por administración.
   </Accordion>
 </AccordionGroup>
