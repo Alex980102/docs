@@ -68,8 +68,14 @@
           {
             "group": "App Asesor",
             "pages": [
-              "vision-tecnologica/principios-guia",
-              "vision-tecnologica/proceso-nueva-cotizacion"
+              "vision-tecnologica/descargar-app",
+              "vision-tecnologica/inicio-sesion",
+              "vision-tecnologica/panel-lateral",
+              "vision-tecnologica/inicio",
+              "vision-tecnologica/comunidad",
+              "vision-tecnologica/ventas",
+              "vision-tecnologica/metas",
+              "vision-tecnologica/finanzas"             
             ]
           },
           {
