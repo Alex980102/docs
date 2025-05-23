@@ -1,0 +1,124 @@
+La sección **Finanzas** de la App Asesor muestra un resumen detallado de tus ingresos generados por ventas, comisiones y recompensas internas. Desde aquí puedes hacer seguimiento a tus pagos, consultar periodos y ver tus recibos mensuales.
+
+---
+
+## Filtro por periodo
+
+En la parte superior derecha de la vista encontrarás el ícono de calendario, que te permite filtrar la información por mes.
+
+<Tip>
+  Este filtro afecta los valores mostrados en pantalla, permitiéndote consultar
+  únicamente los datos del mes seleccionado.
+</Tip>
+
+---
+
+## Indicadores financieros
+
+<Card title="Comisiones pronosticadas" icon="chart-line" horizontal={true}>
+  Monto total de ventas ya pagadas por el cliente y que están listas para ser
+  cobradas. Son comisiones confirmadas.
+</Card>
+
+<Card title="Comisiones potenciales" icon="hourglass-half" horizontal={true}>
+  Monto generado por ventas al corte vigente que pueden ingresar como comisión
+  si se cumplen los requisitos.
+</Card>
+
+<Card title="Puntos Wallet" icon="wallet" horizontal={true}>
+  Representan el 1% del valor de venta cuando el cliente cubre al menos el 10%
+  de su compra en moneda nacional.
+</Card>
+
+<Card title="Puntos Spiff" icon="gift" horizontal={true}>
+  Incentivos especiales otorgados por la empresa. Su pago puede ser inmediato o
+  al corte de comisiones pasivas, dependiendo de la dinámica.
+</Card>
+
+---
+
+## Tipos de comisión
+
+<Note>
+  Los tipos de comisión se calculan automáticamente y dependen del tipo de
+  enganche y la fecha de corte.
+</Note>
+
+| Tipo de comisión | Condiciones                                | Corte              | Tiempo de pago         |
+| ---------------- | ------------------------------------------ | ------------------ | ---------------------- |
+| Directas 1       | Enganche en una sola exhibición o diferido | Día 15 del mes     | Se procesan en 5 días  |
+| Directas 2       | Enganche diferido (segunda mitad del mes)  | Último día del mes | Se procesan en 5 días  |
+| Pasivas          | Ventas sin enganche                        | Último día del mes | Se procesan en 15 días |
+
+<Check>
+  Puedes acceder al resumen de cada tipo de ingreso para ver el periodo
+  comprendido y fecha de pago estimada.
+</Check>
+
+---
+
+## Acceso a tipos de ingreso
+
+En la parte inferior de esta sección encontrarás accesos directos para visualizar el detalle de cada tipo de comisión:
+
+- **Comisiones Directas 1**
+- **Comisiones Directas 2**
+- **Comisiones Pasivas**
+
+Al ingresar a cada una, verás:
+
+- Porcentaje cobrado vs. generado
+- Comisiones pronosticadas vs. potenciales
+- Fecha exacta de pago según el corte
+
+<Info>
+  Esta información te permite dar seguimiento a lo que ya generaste y lo que
+  está en proceso de pago.
+</Info>
+
+---
+
+## Recibos
+
+Al final de la vista podrás acceder a la sección de **Recibos**, donde se muestran los pagos realizados por mes.
+
+<Note>
+  Esta funcionalidad es idéntica a la sección de Recibos dentro del dashboard.
+  Te permitirá ver un desglose mes a mes de tus ingresos confirmados.
+</Note>
+
+---
+
+## Preguntas frecuentes (FAQ)
+
+<AccordionGroup type="multiple">
+  <Accordion title="¿Cuál es la diferencia entre comisiones pronosticadas y potenciales?">
+    Las pronosticadas ya fueron confirmadas como pagadas y están listas para cobrar.  
+    Las potenciales dependen del cumplimiento de condiciones antes del corte.
+  </Accordion>
+
+{" "}
+
+<Accordion title="¿Dónde veo la fecha de pago de cada comisión?">
+  En cada tipo de ingreso (Directas 1, 2 y Pasivas) se indica el periodo y el
+  día exacto de pago estimado.
+</Accordion>
+
+{" "}
+
+<Accordion title="¿Puedo acumular puntos Wallet sin enganche?">
+  No. Solo se generan si el inversionista cubre al menos el 10% de su compra en
+  moneda nacional.
+</Accordion>
+
+{" "}
+
+<Accordion title="¿Qué significa Spiff?">
+  Son incentivos especiales que se otorgan por resultados extraordinarios o
+  dinámicas específicas.
+</Accordion>
+
+  <Accordion title="¿Los recibos están disponibles todos los meses?">
+    Sí. Una vez que tu comisión ha sido procesada y pagada, el recibo correspondiente se habilita en esta vista.
+  </Accordion>
+</AccordionGroup>
