@@ -1,5 +1,3 @@
-## Campañas disponibles
-
 Desde esta sección puedes visualizar todas las campañas activas, inactivas o expiradas que pueden aplicarse durante el proceso de cotización.  
 Estas campañas están disponibles únicamente para el perfil **Asesor**.
 
@@ -7,52 +5,69 @@ Estas campañas están disponibles únicamente para el perfil **Asesor**.
 
 ## 1. ¿Qué información muestra?
 
-Cada tarjeta de campaña incluye:
+Cada campaña se presenta con los siguientes datos:
 
-- **Nombre de la campaña**
-- **Estado**:
-  - `ACTIVE`: Disponible y vigente.
-  - `INACTIVE`: Aún no inicia o está pausada.
-  - `EXPIRED`: Ya finalizó.
-- **Fechas de inicio y fin**
-- **Código de campaña**: Usado durante la generación de cotizaciones.
-- **Total de registros**: Usuarios que han utilizado el código.
+| Elemento           | Descripción                                                                      |
+| ------------------ | -------------------------------------------------------------------------------- |
+| Nombre de campaña  | Identificador visible de la promoción.                                           |
+| Estado             | Indicado como: <code>ACTIVE</code>, <code>INACTIVE</code>, <code>EXPIRED</code>. |
+| Fechas             | Período de vigencia (inicio y fin).                                              |
+| Código de campaña  | Se usa en el proceso de cotización para aplicar el beneficio.                    |
+| Total de registros | Número de usuarios que han usado el código.                                      |
+
+<Info>
+  Los estados como <code>ACTIVE</code> o <code>EXPIRED</code> ayudan a
+  identificar rápidamente si una campaña puede ser utilizada.
+</Info>
+
+<Card title="Estados posibles" icon="signal">
+  <ul>
+    <li>
+      <code>ACTIVE</code>: Disponible y vigente.
+    </li>
+    <li>
+      <code>INACTIVE</code>: Aún no inicia o está pausada.
+    </li>
+    <li>
+      <code>EXPIRED</code>: Ya finalizó y no puede aplicarse.
+    </li>
+  </ul>
+</Card>
 
 ---
 
 ## 2. Descargar listado
 
-Cada campaña cuenta con un botón para descargar su reporte:
+Cada campaña cuenta con un botón para **descargar el listado de registros en formato Excel (.xlsx)**.
 
-📥 **Descargar Listado**
-
-<Info>
-  El archivo descargado es un documento en formato <b>Excel (.xlsx)</b> que
-  muestra los registros de clientes que han utilizado dicha campaña.
-</Info>
-
-El archivo incluye columnas como:
+<Note>
+  El archivo contiene información de clientes que han usado la campaña:
+</Note>
 
 - Nombre y apellidos
 - Número de teléfono
 - Correo electrónico
 - Fecha de registro
 
+<Card title="Formato descargable" icon="file-excel" horizontal={true}>
+  El documento está en formato <strong>.xlsx</strong> y es útil para análisis,
+  seguimiento o validación de resultados.
+</Card>
+
 ---
 
 ## 3. ¿Para qué sirven las campañas?
 
-Los códigos de campaña pueden usarse para:
+Los códigos de campaña pueden utilizarse para:
 
-- Aplicar **descuentos especiales** en cotizaciones.
-- **Promocionar productos** o desarrollos específicos.
-- Incentivar la adquisición de lotes en temporadas clave.
+- Aplicar **descuentos especiales** durante la cotización.
+- **Promocionar productos** o etapas específicas.
+- Incentivar la compra de lotes durante una temporada determinada.
 
-<Card>
-  <b>Ejemplo:</b>
-  <br />
-  La campaña “Winter is Comming” incluye el código <code>DESCUENTO100</code> y
-  permite aplicar una promoción durante los meses de septiembre a diciembre.
+<Card title="Ejemplo de uso" icon="tag">
+  La campaña <strong>“Winter is Comming”</strong> incluye el código{" "}
+  <code>DESCUENTO100</code>y permite aplicar una promoción válida entre
+  septiembre y diciembre.
 </Card>
 
 ---
@@ -68,30 +83,31 @@ Los códigos de campaña pueden usarse para:
 
 <Accordion title="¿Qué pasa si una campaña está marcada como 'INACTIVE'?">
   Significa que aún no ha iniciado o fue pausada temporalmente. No se puede
-  utilizar hasta que esté activa.
+  utilizar hasta que esté <code>ACTIVE</code>.
 </Accordion>
 
 {" "}
 
 <Accordion title="¿Dónde uso el código de campaña?">
-  El código se ingresa durante el proceso de creación de cotizaciones para
-  aplicar promociones o descuentos asociados.
+  El código se ingresa durante la creación de cotizaciones para aplicar
+  descuentos o promociones asignadas.
 </Accordion>
 
 {" "}
 
 <Accordion title="¿Qué información contiene el archivo descargable?">
-  Un listado de usuarios registrados bajo esa campaña: nombre, correo, teléfono
-  y fecha de registro.
+  Nombre, correo electrónico, teléfono y fecha de registro de los usuarios que
+  han utilizado la campaña.
 </Accordion>
 
 {" "}
 
 <Accordion title="¿Qué pasa cuando una campaña está 'EXPIRED'?">
-  Ya no se puede usar. La campaña ha llegado a su fecha de finalización.
+  Ya no puede ser utilizada. La promoción ha finalizado y el código se desactiva
+  automáticamente.
 </Accordion>
 
   <Accordion title="¿Se pueden programar futuras campañas?">
-    Sí. Las campañas se mostrarán aquí aunque aún no estén activas, para que puedas anticipar su uso.
+    Sí. Las campañas futuras se mostrarán en la lista aunque su estado sea <code>INACTIVE</code>, para que puedas anticipar su disponibilidad.
   </Accordion>
 </AccordionGroup>

@@ -9,15 +9,15 @@ Esta vista es de **solo consulta** y está disponible para usuarios con perfil *
 Utiliza los campos de fecha para seleccionar un rango de tiempo específico.  
 Esto filtrará los recibos mostrados en función del mes de pago.
 
-<Check>
+<Tip>
   Selecciona una fecha de inicio y una fecha final para ver los recibos emitidos
   en ese rango.
-</Check>
+</Tip>
 
-<Check>
+<Info>
   Si no se selecciona ninguna fecha, se mostrarán todos los meses disponibles
   por defecto (si existen registros).
-</Check>
+</Info>
 
 ---
 
@@ -25,12 +25,12 @@ Esto filtrará los recibos mostrados en función del mes de pago.
 
 La tabla muestra los siguientes datos:
 
-- **Mes**: periodo correspondiente al pago.
-- **Total pagado**: monto total recibido en comisiones ese mes.
+| Campo        | Descripción                                         |
+| ------------ | --------------------------------------------------- |
+| Mes          | Periodo correspondiente al pago.                    |
+| Total pagado | Monto total recibido en comisiones durante ese mes. |
 
-<Card>
-  <b>Nota:</b>
-  <br />
+<Card title="Sin resultados visibles" icon="circle-info" horizontal={true}>
   Si aún no has generado ventas comisionables, no verás resultados en esta
   sección.
 </Card>
@@ -45,10 +45,14 @@ Cada registro incluirá una opción para **descargar el recibo en formato PDF**,
 - Detalle de desarrollos, lotes y porcentajes aplicados.
 - Fecha de pago y subtotal acumulado.
 
-<Info>
-  Estos recibos son documentos oficiales y pueden ser utilizados como
-  comprobantes para efectos fiscales o internos.
-</Info>
+<Card
+  title="Documento válido para uso oficial"
+  icon="file-pdf"
+  horizontal={true}
+>
+  Estos recibos pueden ser utilizados como comprobantes para efectos fiscales o
+  procesos internos.
+</Card>
 
 ---
 
@@ -56,6 +60,10 @@ Cada registro incluirá una opción para **descargar el recibo en formato PDF**,
 
 Puedes ajustar cuántos recibos ver por página desde el menú inferior.  
 Esto es útil si tienes muchos meses registrados.
+
+<Check>
+  Usa el control de paginación para revisar periodos anteriores o más extensos.
+</Check>
 
 ---
 

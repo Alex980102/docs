@@ -4,38 +4,47 @@ Desde esta vista puedes consultar toda la información relacionada con una venta
 
 ## 1. Venta
 
-En esta pestaña se muestra un resumen general de la venta:
+<CardGroup cols={2}>
+  <Card title="Resumen de la venta" icon="receipt">
+    En esta pestaña se muestra un resumen general que incluye:
+    <ul>
+      <li><strong>ID</strong> de la venta y cotización relacionada</li>
+      <li><strong>Fecha de emisión</strong></li>
+      <li><strong>Nombre del cliente</strong> y <strong>asesor asignado</strong></li>
+      <li><strong>Desarrollo</strong>, <strong>proyecto</strong> y <strong>etapa</strong></li>
+      <li><strong>Lote</strong> y <strong>superficie</strong></li>
+      <li><strong>Gastos administrativos</strong></li>
+      <li><strong>Plazo de pago</strong></li>
+      <li><strong>Enganche</strong> (porcentaje y monto)</li>
+      <li><strong>Monto total</strong> de la venta</li>
+    </ul>
+  </Card>
 
-- **ID de la venta y cotización relacionada**
-- **Fecha de emisión**
-- **Nombre del cliente**
-- **Asesor asignado**
-- **Desarrollo, proyecto y etapa**
-- **Lote y superficie**
-- **Gastos administrativos**
-- **Plazo de pago**
-- **Enganche (porcentaje y monto)**
-- **Monto total de la venta**
+  <Card title="Tabla de pagos" icon="calendar-check">
+    A la derecha se muestra la tabla de pagos con detalles de:
+    <ul>
+      <li>Enganche</li>
+      <li>Cuotas mensuales</li>
+      <li>Fechas e importes programados</li>
+    </ul>
+  </Card>
+</CardGroup>
 
-A la derecha, verás una **tabla de pagos** con el detalle de enganches y cuotas, fechas e importes programados.
-
-<Card>
+<Tip>
   Esta sección es ideal para verificar toda la información de la venta de forma
   rápida y clara.
-</Card>
+</Tip>
 
 ---
 
 ## 2. Asesor
 
-Muestra la información del asesor responsable de esta venta:
-
-- Nombre completo
-- Correo electrónico
-- Teléfono
-- Rol dentro del sistema
-
-También se visualiza el **esquema de comisiones** asociado y el listado de comisiones generadas (si aplica).
+| Campo              | Descripción                           |
+| ------------------ | ------------------------------------- |
+| Nombre completo    | Nombre del asesor responsable.        |
+| Correo electrónico | Email asociado a la cuenta de asesor. |
+| Teléfono           | Contacto del asesor.                  |
+| Rol                | Nivel de acceso dentro del sistema.   |
 
 <Info>
   Si aún no hay comisiones registradas, el sistema mostrará un aviso
@@ -46,14 +55,18 @@ También se visualiza el **esquema de comisiones** asociado y el listado de comi
 
 ## 3. Desarrollo
 
-Aquí se detallan los datos técnicos del desarrollo vinculado a la venta:
+<CardGroup cols={2}>
+  <Card title="Datos del desarrollo" icon="map">
+    - Nombre del desarrollo  
+    - Etapa del proyecto  
+    - Lote asignado  
+    - Área en metros cuadrados
+  </Card>
 
-- Nombre del desarrollo
-- Etapa del proyecto
-- Lote asignado
-- Área en metros cuadrados
-
-Además, se presenta una imagen tipo **mapa** con la ubicación visual del lote en el plano del proyecto.
+  <Card title="Mapa del lote (chepina)" icon="map-pin">
+    Se incluye una representación visual del lote dentro del plano del proyecto, lo cual permite validar su ubicación física.
+  </Card>
+</CardGroup>
 
 <Note>
   Esta representación visual permite validar fácilmente la ubicación física del
@@ -64,14 +77,12 @@ Además, se presenta una imagen tipo **mapa** con la ubicación visual del lote 
 
 ## 4. Documentos
 
-En esta sección puedes consultar y cargar archivos importantes relacionados con la venta:
+Sección donde puedes consultar y cargar archivos importantes relacionados con la venta:
 
 - CURP o identificación oficial
 - Comprobante de domicilio
 - Situación fiscal
 - Otros documentos requeridos
-
-Se muestra una tabla con **título**, **categoría**, **descripción** y **fecha de registro** de cada documento.
 
 <Check>
   Solo se mostrarán los documentos cargados por el cliente o el equipo
@@ -82,17 +93,15 @@ Se muestra una tabla con **título**, **categoría**, **descripción** y **fecha
 
 ## 5. Propietario
 
-Muestra los datos del comprador registrado como titular del contrato:
-
-- Nombre completo
-- Nacionalidad
-- Estado civil
-- Correo y teléfono
-- Ocupación
-- Clave de elector y tipo de identificación
-- Dirección
-
-También puedes visualizar los documentos cargados (INE o pasaporte, frente y reverso).
+| Campo                  | Descripción                                      |
+| ---------------------- | ------------------------------------------------ |
+| Nombre completo        | Nombre del comprador registrado.                 |
+| Nacionalidad           | País de origen del propietario.                  |
+| Estado civil           | Estado civil declarado.                          |
+| Correo y teléfono      | Datos de contacto del propietario.               |
+| Ocupación              | Profesión u ocupación actual.                    |
+| Documento de identidad | INE o pasaporte (con clave de lector si aplica). |
+| Dirección              | Domicilio completo registrado.                   |
 
 <Info>
   El correo electrónico no puede ser modificado desde esta vista. Si es
@@ -108,30 +117,36 @@ También puedes visualizar los documentos cargados (INE o pasaporte, frente y re
 
 ## 6. Contrato
 
-Aquí se presenta el contrato generado para esta venta. Incluye:
+En esta sección se presenta el contrato generado para la venta:
 
 - Tipo de contrato (individual o plural)
 - Fecha de envío
 - Fecha de firma
 - Estatus actual del contrato
 
-Si el contrato ya fue generado y firmado, estará disponible para descarga en formato PDF.
+<Check>
+  Si el contrato ya fue firmado, estará disponible para descarga en PDF.
+</Check>
 
 ---
 
 ## 7. Cobranza
 
-Esta pestaña muestra el **detalle de pagos programados** para la venta:
+<CardGroup cols={2}>
+  <Card title="Detalle de pagos" icon="file-spreadsheet">
+    Enganches, mensualidades, fechas e importes están organizados en una tabla
+    que puedes consultar fácilmente.
+  </Card>
+  <Card title="Facturación" icon="file-invoice-dollar">
+    Visualiza el estatus de cada pago y si la factura ha sido emitida o está
+    pendiente.
+  </Card>
+</CardGroup>
 
-- Enganches y mensualidades
-- Fechas e importes
-- Estatus de cada pago (pendiente, pagado, vencido)
-- Estado de la factura asociada
-
-<Card>
+<Tip>
   Desde esta sección puedes llevar un control preciso de los pagos del cliente y
   anticipar posibles atrasos.
-</Card>
+</Tip>
 
 ---
 
