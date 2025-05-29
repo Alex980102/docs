@@ -75,23 +75,136 @@ Se incorpora un nuevo módulo que permite a los asesores cargar sus facturas dir
 
 #### Validación y reducción de líneas duplicadas en CSV - **fix**
 
-- Optimización del proceso de carga de datos desde archivos CSV.
-- Prevención de duplicidades en los ingresos bancarios.
+Se incorpora una validación adicional en la carga de archivos CSV de ingresos bancarios. Esta funcionalidad permite detectar líneas duplicadas para prevenir que un mismo ingreso sea conciliado más de una vez. Al identificar duplicados, el sistema los marca con estatus **"bloqueado"**, evitando su conciliación directa y facilitando la gestión de errores.
+
+##### Características principales:
+
+- Detección automática de líneas bancarias duplicadas al importar archivos CSV.
+- Asignación del estatus **bloqueado** a registros duplicados para evitar su conciliación.
+- Filtro adicional por estatus y concepto **“duplicado”** en el módulo de conciliación.
+- Visualización clara de registros bloqueados para usuarios encargados.
+
+<Card
+  title="¿Qué campos se consideran para detectar duplicados?"
+  icon="circle-check"
+  horizontal={true}
+>
+  <ul>
+    <li>Fecha</li>
+    <li>Monto</li>
+    <li>Referencia</li>
+    <li>Concepto</li>
+    <li>Banco</li>
+    <li>Se permite una diferencia en uno de los campos definidos</li>
+  </ul>
+</Card>
+
+##### Mejora respecto a la versión anterior:
+
+Esta mejora reduce el riesgo de conciliaciones duplicadas, lo que evita aplicar un mismo ingreso a múltiples ventas o mensualidades. Mejora la confiabilidad del sistema de conciliación.
+
+<Tip>
+  Ingresa al [módulo de
+  conciliación](https://dashboard.grupocolorines.mx/conciliation) para usarlo
+</Tip>
+
+---
 
 #### Migración de flujo de caja al nuevo dashboard - **migration**
 
 - El módulo se trasladó desde Intranet 1 hacia el dashboard unificado.
 - Unifica la visualización financiera bajo el nuevo sistema operativo.
 
-#### Módulo de notificaciones de rescisión de contrato - **feature**
+---
 
-- Generación automática de tres notificaciones para clientes con cartera vencida.
-- Pensado para agilizar procesos legales y contractuales.
+#### Notificaciones de rescisión de contrato - **feature**
+
+<img
+  className="rounded-xl"
+  width="500"
+  height="500"
+  src="/images/notificaciones-clientes.png"
+/>
+
+Se incorpora un sistema automatizado de envío de notificaciones para usuarios con 4 o más meses de adeudo en sus lotes. Este sistema permite dar seguimiento legal conforme a los requisitos necesarios para proceder con la rescisión de contrato.
+
+##### Características principales:
+
+- Envío automático de notificaciones en tres fases de vencimiento.
+- Opción de envío manual solo para la primera notificación.
+- Panel de administración de notificaciones con control y seguimiento.
+- Trackeo en tiempo real del estado de cada notificación enviada.
+
+<Card
+  title="Etapas de notificación automática"
+  icon="envelope-circle-check"
+  horizontal={true}
+>
+  <ul>
+    <li>1er notificación: Aviso de deuda con plazo de 15 días</li>
+    <li>2da notificación: Segundo aviso con nuevo plazo de 15 días</li>
+    <li>3ra notificación: Aviso formal de inicio de proceso de rescisión</li>
+  </ul>
+</Card>
+
+##### Mejora respecto a la versión anterior:
+
+Anteriormente el envío de estas notificaciones se realizaba de forma manual, lo que generaba omisiones y falta de seguimiento. Este nuevo sistema automatiza el proceso y asegura el cumplimiento legal del procedimiento.
+
+<Tip>
+  Conoce más acerca de este módulo desde Panel de administración > Clientes >
+  Notificaciones a clientes
+</Tip>
+
+---
 
 #### Descarga de reportes de venta - **feature**
 
 - Permite exportar listados de ventas desde el sistema.
 - Incluye soporte para filtros activos y formatos ordenados para análisis.
+
+---
+
+#### Comisiones embajador - **feature**
+
+<img
+  className="rounded-xl"
+  width="500"
+  height="500"
+  src="/images/grupo-comisiones.png"
+/>
+
+Este nuevo módulo permite la creación de **grupos de comisiones** para usuarios específicos, otorgándoles un porcentaje personalizado sobre las ventas generadas en proyectos asignados. Está pensado para ofrecer comisiones a personas ajenas a la estructura comercial tradicional, como embajadores o promotores externos.
+
+##### Características principales:
+
+- Creación y edición de grupos de comisiones con nombre, descripción y porcentaje asignado.
+- Asociación de usuarios al grupo con definición de:
+  - Porcentaje individual
+  - Plazo de pago
+  - Enganche mínimo para comisiones únicas
+- Asociación de proyectos, desarrollos y etapas habilitadas para que las ventas generen comisión.
+- Activación o desactivación de grupos según necesidades operativas.
+
+<Card
+  title="Gestión flexible de grupos y condiciones"
+  icon="user-group"
+  horizontal={true}
+>
+  <ul>
+    <li>Asignación por usuario y por desarrollo</li>
+    <li>Control sobre cuándo y cómo se generan las comisiones</li>
+    <li>Independencia de la estructura de comisiones tradicional</li>
+  </ul>
+</Card>
+
+##### Mejora respecto a la versión anterior:
+
+Anteriormente, las comisiones especiales debían solicitarse de forma manual para cada caso. Con esta herramienta se reduce significativamente el tiempo y esfuerzo administrativo, permitiendo habilitar o deshabilitar la aplicación de comisiones con mayor control y eficiencia.
+
+<Tip>Ingresa a Comisiones -> Grupos de comisionistas para hacer uso de el.</Tip>
+
+---
 
 ### Portal Cliente
 
