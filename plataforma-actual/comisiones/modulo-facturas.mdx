@@ -1,0 +1,105 @@
+Este módulo permite a los asesores cargar sus comprobantes fiscales directamente desde el dashboard para validar y gestionar el cobro de sus comisiones.  
+Automatiza la revisión de archivos y aplica reglas fiscales para garantizar que los documentos estén correctos.
+
+---
+
+## Acceso al módulo
+
+Para ingresar:
+
+1. Dirígete a **Dashboard > Comisiones > Recibos de comisiones**.
+2. Visualiza el listado de periodos e ingresa al **Detalle de comisiones**.
+3. Selecciona el botón de **Facturar**.
+4. Da clic para subir los archivos correspondientes.
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  className="rounded-xl"
+  src="/images/facturacion-actualizada.mp4"
+></video>
+
+<Card title="¿Quién puede usarlo?" icon="user-check" horizontal={true}>
+  Disponible para todos los asesores.
+</Card>
+
+---
+
+## Carga de factura
+
+Una vez dentro, verás precargada la información fiscal vinculada a la comisión del asesor:
+
+- Razón social
+- RFC
+- Domicilio fiscal
+- Uso de CFDI
+- Concepto
+- Unidad de medida
+- Cantidad
+- **Monto a cobrar (autorizado por el área de comisiones)**
+- **Periodo asignado**
+
+Además, podrás consultar el historial de facturas cargadas y el estatus de cada una.
+
+Deberás subir:
+
+<ul>
+  <li>PDF de la factura</li>
+  <li>Archivo XML</li>
+  <li>Opinión de cumplimiento del SAT vigente</li>
+</ul>
+
+<Note>
+  Toda la información está enlazada al periodo y monto autorizado por el área de
+  comisiones. **Puedes revisar el estatus de cada carga anterior y descargar los
+  archivos validados en caso necesario.**
+</Note>
+
+---
+
+## Validaciones por parte del equipo
+
+Al presionar **Validar**, el equipo revisará los siguientes puntos del XML y del archivo de cumplimiento.
+
+**Estatus de la factura:**  
+Al finalizar la validación, podrás ver el avance de cada carga en la columna **Estatus**:
+
+- Pendiente
+- En revisión
+- Rechazado (en este caso nos pondremos en contacto contigo)
+- Listo para pago
+
+---
+
+### Preguntas frecuentes (FAQ)
+
+<AccordionGroup type="multiple">
+  <Accordion title="¿Qué necesito para validar mi factura?">
+    Debes subir el PDF, XML y opinión de cumplimiento del SAT en formato PDF del mes en curso.
+  </Accordion>
+
+{" "}
+
+<Accordion title="¿Qué pasa si mi factura tiene errores?">
+  El equipo te notificará el error con el motivo exacto por archivo. Podrás
+  corregirlo y volver a subirlo.
+</Accordion>
+
+{" "}
+
+<Accordion title="¿Cuándo puedo subir la factura?">
+  Una vez que el sistema refleje un monto autorizado pendiente de cobro y el
+  periodo esté disponible en tu listado.
+</Accordion>
+
+{" "}
+
+<Accordion title="¿Qué pasa después de validar la factura?">
+  Queda lista para pago. Si fue aceptada, no debes hacer nada más. Puedes
+  consultar el estatus actualizado en la pantalla principal del módulo.
+</Accordion>
+
+</AccordionGroup>
