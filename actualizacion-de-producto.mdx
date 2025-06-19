@@ -2,13 +2,152 @@
 
 ---
 
+<Update label="Jun 2025">
+
+## Dashboard
+
+### Nueva vista de detalle de venta en cobranza (auditorías) - **improvement**
+
+#### Detalle de Venta
+
+Se incorpora una nueva vista que permite al personal de cobranza consultar el **detalle completo de una venta**, incluyendo información general, tabla de amortización, flujo de caja y enlaces de pago. Esta vista facilita el seguimiento de cómo se han cubierto las mensualidades y brinda herramientas para validar ventas y pagos, además de nuevas operaciones sobre conciliaciones bancarias.
+
+<Card title="¿Para qué sirve?" icon="eye" horizontal={true}>
+  Permite validar mensualidades pagadas, consultar información general de la
+  venta y usarlo como paso previo para reestructuras. Además, habilita
+  operaciones sobre conciliaciones bancarias como revertir líneas erróneas.
+</Card>
+
+##### Características principales:
+
+- Visualizar detalles completos de la venta y sus pagos.
+- Validar mensualidades ya pagadas.
+- Validar el estado de la venta (mensualidades actuales).
+- Revertir conciliaciones de líneas bancarias en caso de errores.
+- Consultar si un ingreso bancario ha afectado varias ventas.
+
+<Card
+  title="Operaciones disponibles sobre conciliaciones bancarias"
+  icon="arrow-rotate-left"
+  horizontal={true}
+>
+  <ul>
+    <li>Visualización de mensualidades afectadas por cada conciliación</li>
+    <li>Detección de ventas múltiples afectadas por un mismo ingreso</li>
+    <li>Reversión de líneas conciliadas (completo o parcial)</li>
+  </ul>
+</Card>
+
+##### Mejora respecto a la versión anterior:
+
+La nueva vista ofrece **mayor visibilidad** y control sobre las ventas y sus pagos, además de permitir operaciones antes no disponibles, como la reversión de conciliaciones bancarias erróneas.
+
+<Tip>
+  Puedes acceder a esta vista desde el [panel de administración de
+  cobranza](https://dashboard.grupocolorines.mx/collections)
+</Tip>
+
+---
+
+### Reestructura de ventas - **feature**
+
+#### Reestructura de tabla de amortización
+
+Se habilita una nueva funcionalidad que permite modificar la **tabla de amortización** de una venta, ajustando el número de cuotas y las fechas de pago, siempre y cuando la venta haya sido previamente auditada. Esta herramienta facilita el refinanciamiento bajo condiciones controladas, brindando mayor flexibilidad operativa sin perder el control financiero ni los criterios de validación.
+
+<Card title="¿Para qué sirve?" icon="pen-to-square" horizontal={true}>
+  Permite actualizar tanto el número de cuotas como las fechas de pago en la
+  tabla de amortización de una venta, después de haber completado la auditoría
+  inicial de los pagos vinculados.
+</Card>
+
+##### Características principales:
+
+- Actualización del **número de cuotas** en la tabla de amortización.
+- Modificación de la **fecha de pago** de cada cuota.
+
+<Card title="Flexibilidad bajo control" icon="calendar-days" horizontal={true}>
+  <ul>
+    <li>
+      Permite ajustar la dispersión de pagos sin comprometer la validación
+      financiera.
+    </li>
+    <li>Solo disponible tras auditoría de pagos vinculados.</li>
+    <li>Refinanciamiento controlado y alineado a políticas internas.</li>
+  </ul>
+</Card>
+
+##### Mejora respecto a la versión anterior:
+
+Este módulo representa una **nueva capacidad** en el sistema, ya que anteriormente no era posible modificar la tabla de amortización directamente desde la plataforma.
+
+<Tip>
+  Accede a la reestructura de ventas desde el entorno de desarrollo: [Ir a la
+  reestructura en Develop](https://dashboard.colorines.paitesting.com) **Ruta:**
+  Cobranza > Gestor de Cobranza > Reestructura
+</Tip>
+
+---
+
+## App Asesor
+
+### Onboarding Asesor - **improvement**
+
+Permite gestionar y verificar que el asesor complete correctamente los pasos necesarios para integrarse a la plataforma, desde la carga de documentos hasta su certificación, facilitando así su validación y activación.
+
+<Card title="¿Para qué sirve?" icon="circle-check" horizontal={true}>
+  Facilita el seguimiento y validación del proceso de integración del asesor,
+  asegurando el cumplimiento de todos los pasos desde la app móvil hasta la
+  activación final.
+</Card>
+
+##### Descripción general
+
+El proceso de onboarding del asesor se lleva a cabo principalmente desde la app móvil, donde el asesor llena su información personal, sube su documentación y avanza con su capacitación en College.
+
+Desde el Dashboard, actualmente solo se cuenta con funcionalidades de verificación de datos y asignación por parte del equipo de reclutamiento.
+
+No hay aún una vista principal consolidada del flujo de onboarding, pero sí existe la capacidad de consultar el estado de un asesor, verificar sus documentos y realizar acciones como aprobaciones o asignaciones.
+
+##### Características principales
+
+- **Carga de documentos obligatorios** desde la app
+- **Firma de contrato** del asesor
+- **Acceso a capacitación** en College
+- **Validación de documentación** por parte de reclutamiento
+- **Asignación manual** de asesores desde el Dashboard
+
+<Card title="Ventajas de la mejora" icon="thumbs-up" horizontal={true}>
+  <ul>
+    <li>El proceso deja de ser manual y disperso.</li>
+    <li>Reducción de errores y tiempos de validación.</li>
+    <li>Seguimiento centralizado desde el Dashboard.</li>
+    <li>Mayor autonomía para el asesor durante su registro.</li>
+  </ul>
+</Card>
+
+##### ¿Dónde se encuentra?
+
+**App móvil:**  
+Ruta: Home > Menú lateral > Perfil > Onboarding
+
+**Dashboard web:**  
+Producción: https://dashboard.grupocolorines.mx/channels
+
+**Acceso actual:**  
+Panel de canales > Seleccionar Canal > Seleccionar Estructura > Verificar datos y asignar
+
+<Info>No existe vista principal de onboarding como módulo independiente</Info>
+
+</Update>
+
+---
+
 <Update label="May 2025">
 
-## Mejoras en automatización, gestión de ventas y unificación de sistemas
+## Dashboard
 
-### Dashboard
-
-#### Validación de facturas - **feature**
+### Validación de facturas - **feature**
 
 <img
   className="rounded-xl"
@@ -73,7 +212,7 @@ Se incorpora un nuevo módulo que permite a los asesores cargar sus facturas dir
 
 ---
 
-#### Validación y reducción de líneas duplicadas en CSV - **fix**
+### Validación y reducción de líneas duplicadas en CSV - **fix**
 
 Se incorpora una validación adicional en la carga de archivos CSV de ingresos bancarios. Esta funcionalidad permite detectar líneas duplicadas para prevenir que un mismo ingreso sea conciliado más de una vez. Al identificar duplicados, el sistema los marca con estatus **"bloqueado"**, evitando su conciliación directa y facilitando la gestión de errores.
 
@@ -110,14 +249,14 @@ Esta mejora reduce el riesgo de conciliaciones duplicadas, lo que evita aplicar 
 
 ---
 
-#### Migración de flujo de caja al nuevo dashboard - **migration**
+### Migración de flujo de caja al nuevo dashboard - **migration**
 
 - El módulo se trasladó desde Intranet 1 hacia el dashboard unificado.
 - Unifica la visualización financiera bajo el nuevo sistema operativo.
 
 ---
 
-#### Notificaciones de rescisión de contrato - **feature**
+### Notificaciones de rescisión de contrato - **feature**
 
 <img
   className="rounded-xl"
@@ -158,14 +297,14 @@ Anteriormente el envío de estas notificaciones se realizaba de forma manual, lo
 
 ---
 
-#### Descarga de reportes de venta - **feature**
+### Descarga de reportes de venta - **feature**
 
 - Permite exportar listados de ventas desde el sistema.
 - Incluye soporte para filtros activos y formatos ordenados para análisis.
 
 ---
 
-#### Comisiones embajador - **feature**
+### Comisiones embajador - **feature**
 
 <img
   className="rounded-xl"
@@ -206,11 +345,9 @@ Anteriormente, las comisiones especiales debían solicitarse de forma manual par
 
 ---
 
-### Portal Cliente
+## Portal Cliente
 
-### Portal del cliente
-
-#### Nueva etiqueta visual: Pérdida de ubicación en lote - **feature**
+### Nueva etiqueta visual: Pérdida de ubicación en lote - **feature**
 
 <img
   className="rounded-xl"
@@ -245,9 +382,9 @@ Es una etiqueta nueva que no existía anteriormente. Mejora la visibilidad de ca
   lote**
 </Tip>
 
-### Web Tres Raíces
+## Web Tres Raíces
 
-#### Autocompra en Tres Raíces - **feature**
+### Autocompra en Tres Raíces - **feature**
 
 <img
   className="rounded-xl"
@@ -279,12 +416,9 @@ Ingresa a la web desde [aquí](https://tresraices.mx/)
 ---
 
 <Update label="Abr 2025">
+## Dashboard
 
-## Mejora en gestor de cobranza y listado de ventas nuevas
-
-### Dashboard
-
-#### Listado de ventas nuevas - **feature**
+### Listado de ventas nuevas - **feature**
 
 - Módulo para agregar comentarios a ventas en llamadas de éxito.
 - Mejora el seguimiento comercial y feedback por parte del equipo.
@@ -315,12 +449,9 @@ Ingresa a la web desde [aquí](https://tresraices.mx/)
 ---
 
 <Update label="Mar 2025">
+## Dashboard
 
-## Integridad de datos y visualización de estructuras comerciales
-
-### Dashboard
-
-#### Carga de documentos en venta - **feature**
+### Carga de documentos en venta - **feature**
 
 - Permite adjuntar documentos como contratos o anexos desde la vista de venta.
 - Mejora el control documental dentro del sistema.
@@ -340,9 +471,11 @@ Ingresa a la web desde [aquí](https://tresraices.mx/)
 - Corrección en duplicados durante cargas masivas.
 - Validación reforzada durante la importación bancaria.
 
-### Portal Cliente
+---
 
-#### Verificación de datos de la venta - **feature**
+## Portal Cliente
+
+### Verificación de datos de la venta - **feature**
 
 - Alertas para revisar contratos que se anularon por falta de firma.
 
