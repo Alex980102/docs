@@ -48,14 +48,14 @@
               {
                 "group": "Canales",
                 "pages": [
-                  "plataforma-actual/canales/listado-de-canales",
-                  "plataforma-actual/canales/modulo-facturas"
+                  "plataforma-actual/canales/listado-de-canales"
                 ]
               },
               {
                 "group": "Comisiones",
                 "pages": [
-                  "plataforma-actual/comisiones/recibos"
+                  "plataforma-actual/comisiones/recibos",
+                  "plataforma-actual/comisiones/modulo-facturas"
                 ]
               },
               {
