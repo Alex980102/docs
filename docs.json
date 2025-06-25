@@ -101,6 +101,13 @@
         "pages": [
           "actualizacion-de-producto"
         ]
+      },      
+      {
+        "dropdown": "Nuestros proyectos inmobiliarios",
+        "icon": "clock-rotate-left",
+        "pages": [
+          "actualizacion-de-producto"
+        ]
       }
     ],
     "global": {
