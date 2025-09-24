@@ -106,7 +106,13 @@
               {
                 "group": "Asesor",
                 "pages": [
-                  "plataforma-actual/crm_docs/cancelar-cotizacion"
+                  "procesos-digitales/colorinfinity/consultant/inicio",
+                  "procesos-digitales/colorinfinity/consultant/crear-cotizacion",
+                  "procesos-digitales/colorinfinity/consultant/ventas",
+                  "procesos-digitales/colorinfinity/consultant/finanzas",
+                  "procesos-digitales/colorinfinity/consultant/metas",
+                  "procesos-digitales/colorinfinity/consultant/menu",
+                  "procesos-digitales/colorinfinity/consultant/onboarding-asesor"
                 ]
               }
             ]
