@@ -97,12 +97,7 @@
             "pages": [
               "procesos-digitales/colorinfinity/iniciar-sesion",
               "procesos-digitales/colorinfinity/registro",
-              {
-                "group": "Cliente",
-                "pages": [
-                  "plataforma-actual/crm_docs/crear-cotizacion"
-                ]
-              },
+              
               {
                 "group": "Asesor",
                 "pages": [
@@ -113,6 +108,16 @@
                   "procesos-digitales/colorinfinity/consultant/metas",
                   "procesos-digitales/colorinfinity/consultant/menu",
                   "procesos-digitales/colorinfinity/consultant/onboarding-asesor"
+                ]
+              },
+              {
+                "group": "Cliente",
+                "pages": [
+                  "procesos-digitales/colorinfinity/client/home",
+                  "procesos-digitales/colorinfinity/client/lotes",
+                  "procesos-digitales/colorinfinity/client/wallet",
+                  "procesos-digitales/colorinfinity/client/menu"
+
                 ]
               }
             ]

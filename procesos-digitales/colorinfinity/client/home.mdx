@@ -1,0 +1,86 @@
+<Check>Pantalla Principal de Home, esta pantalla aparece una vez que hemos iniciado sesión correctamente</Check>
+Se divide en secciones como: Actividades pendientes y noticias.
+
+<Card title="Actividades Pendientes" icon="pen-to-square">
+  Puedes seleccionar en "ver mas" y te enviara a una vista con todas tus
+    actividades Pendientes. De igual forma puedes tocar cada una de las tarjetas
+    y te enviara a su respectiva pantalla.
+</Card>
+
+<Card title="Noticias" icon="newspaper">
+  Esta es la sección de noticias, puedes darle en ver mas y te aparecerán todas las noticias
+</Card>
+
+<Tabs>
+  <Tab title="Actividades Pendientes">
+    Puedes seleccionar en "ver mas" y te enviara a una vista con todas tus
+    actividades Pendientes. De igual forma puedes tocar cada una de las tarjetas
+    y te enviara a su respectiva pantalla.
+    <img
+      src="/images/clientes/newMas.png"
+      alt="Vista General"
+      width="200"
+      height="100"
+    />
+
+    <Tabs>
+      <Tab title="Pagos Vencidos">
+        Esta card te lleva a la pagina de mis lotes, donde solo se mostraran los lotes que tengan pagos vencidos.
+        <img
+        src="/images/clientes/pagosVencidos.png"
+        alt="Vista General"
+        width="200"
+        height="100"
+        />
+      </Tab>
+      <Tab title="Verifica tu telefono">
+        Esta card te lleva a la pagina de verifica tu telefono, donde podras verificar tu telefono y actualizarlo.
+        <CardGroup cols={2}>
+            <Card title="Enviar Mensaje de Verificacion" >
+                <img src="/images/clientes/send.png" alt="Paso 1" width="300" />
+                <p>En esta pantalla solo debes darle enviar codigo de verificacion</p>
+            </Card>
+            <Card title="Con el mensaje enviado">
+                <img src="/images/clientes/sent.png" alt="Paso 2" width="300" />
+                <p>una vez que recibas en tu whatsapp el codigo de verificacion, solo debes escribirlo y darle verificar</p>
+            </Card>
+            <Card title="Verificación exitosa" >
+                <img src="/images/clientes/verifyOk.png" alt="Paso 2" width="300" />
+                <p>SI el codigo ingresado es correcto, aparecera esta pantalla indicando que la verificacion fue exitosa, presionas salir y regresaras al home</p>
+            </Card>
+        </CardGroup>
+      </Tab>
+      <Tab title="Verifica tu correo">
+        Esta card te lleva a la pagina de verifica tu correo, donde podras verificar tu correo y actualizarlo.
+        <CardGroup cols={2}>
+            <Card title="Enviar Mensaje de Verificacion" >
+                <img src="/images/clientes/sendLink.png" alt="Paso 1" width="300" />
+                <p>En esta pantalla solo debes darle enviar correo de verificacion y debera llegar un mail en tu bandeja de entrada con el link de verificación</p>
+            </Card>
+            <Card title="Con el mensaje enviado">
+                <img src="/images/clientes/sentLink.png" alt="Paso 2" width="300" />
+                <p>una vez que recibas en tu correo el enlace de verificacion, solo debes darle verificar y hacer el proceso de verificacion en un portal web el cual una vez finalizado te retorna a la app</p>
+            </Card>
+        </CardGroup>
+      </Tab>
+      
+    </Tabs>
+  </Tab>
+  <Tab title="Noticias"> 
+    Esta es la sección de noticias, puedes darle en ver mas y te aparecerán todas las noticias
+    <CardGroup cols={2}>
+        <Card title="Noticias" >
+            <img src="/images/clientes/news.png" alt="Paso 1" width="300" />
+            <p>
+            Esta es la sección de noticias, puedes darle en ver mas y te aparecerán todas las noticias
+            </p>
+        </Card>
+        <Card title="Pantalla de noticias">
+            <img src="/images/clientes/newsScreen.png" alt="Paso 2" width="300" />
+            <p>
+                En esta pantalla aparecerán todas las noticias, de igual forma puedes darle like o agregar comentarios sobre las noticias.
+            </p>
+        </Card>
+    </CardGroup>    
+  </Tab>
+</Tabs>
