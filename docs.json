@@ -77,7 +77,7 @@
               "vision-tecnologica/ventas",
               "vision-tecnologica/metas",
               "vision-tecnologica/finanzas",
-              "vision-tecnologica/proceso-onboarding"          
+              "vision-tecnologica/proceso-onboarding"
             ]
           },
           {
@@ -91,9 +91,38 @@
             "pages": [
               "procesos-digitales/ventas-automatizadas"
             ]
+          },
+          {
+            "group": "App Colorinfinity",
+            "pages": [
+              "procesos-digitales/colorinfinity/iniciar-sesion",
+              "procesos-digitales/colorinfinity/registro",
+              
+              {
+                "group": "Asesor",
+                "pages": [
+                  "procesos-digitales/colorinfinity/consultant/inicio",
+                  "procesos-digitales/colorinfinity/consultant/crear-cotizacion",
+                  "procesos-digitales/colorinfinity/consultant/ventas",
+                  "procesos-digitales/colorinfinity/consultant/finanzas",
+                  "procesos-digitales/colorinfinity/consultant/metas",
+                  "procesos-digitales/colorinfinity/consultant/menu",
+                  "procesos-digitales/colorinfinity/consultant/onboarding-asesor"
+                ]
+              },
+              {
+                "group": "Cliente",
+                "pages": [
+                  "procesos-digitales/colorinfinity/client/home",
+                  "procesos-digitales/colorinfinity/client/lotes",
+                  "procesos-digitales/colorinfinity/client/wallet",
+                  "procesos-digitales/colorinfinity/client/menu"
+
+                ]
+              }
+            ]
           }
         ]
-
       },
       {
         "dropdown": "Changelog",
@@ -101,7 +130,7 @@
         "pages": [
           "actualizacion-de-producto"
         ]
-      },      
+      },
       {
         "dropdown": "Nuestros proyectos inmobiliarios",
         "icon": "clock-rotate-left",
@@ -136,6 +165,11 @@
           "anchor": "Status",
           "href": "https://colorines.betteruptime.com",
           "icon": "server"
+        },
+        {
+          "anchor": "App Colorinfinity",
+          "href": "https://colorinfinity.grupocolorines.mx/",
+          "icon": "infinity"
         }
       ]
     }
